@@ -1,0 +1,418 @@
+:root {
+    --main-red: #ff2600;
+    --grey-style: #f2f2f2;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        padding: 0px 30px;
+        background-color: #f2f2f2;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__top__logo {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header__top__logo img {
+        height: 114px;
+    }
+
+    .header__top__logo p {
+        color: var(--main-red);
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .header__top__disc {
+        display: flex;
+        gap: 100px;
+    }
+
+    .header__top__phone__title {
+        display: flex;
+        gap: 15px;
+    }
+
+    .header__top__phone__title p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .header__top__phone {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+    }
+
+    .header__top__phone__link {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 31px;
+    }
+
+    .header__top__phone__link a {
+        color: var(--main-red);
+        font-weight: 500;
+    }
+
+    .header__top__geo {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 10px;
+        gap: 5px;
+        font-weight: 600;
+    }
+
+    .header__top__geo__disc {
+        text-wrap: nowrap;
+    }
+
+    .header__top__func {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .header__top__func::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #fff;
+        top: 0;
+        left: -50px;
+    }
+
+    .header__top__func button {
+        border-radius: 10px;
+        height: 40px;
+        padding: 0px 40px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .header__top__button__price {
+        color: #fff;
+        background-color: #ff2600;
+    }
+
+    .header__top__button__call {
+        color: var(--main-red);
+        background-color: #fff;
+        border: 1px solid var(--main-red);
+    }
+
+    .header__foot__list {
+        display: flex;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+
+    .header__foot__list::-webkit-scrollbar {
+        height: 5px;
+        background-color: #f0f0f0; /* Цвет фона */
+    }
+
+    .header__foot__list::-webkit-scrollbar-thumb {
+        background-color: #c0c0c0; /* Цвет полосы */
+    }
+
+    .header__foot__list li {
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 500;
+        text-wrap: nowrap;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (min-width: 1000px) {
+    .main__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .title {
+        padding: 30px 50px;
+        position: relative;
+        height: 115vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fur-bef,
+    .fur-after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%; /* Делим блок пополам */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fur-bef {
+        left: 0;
+        background-image: url(../img/fur-bef.jpg);
+    }
+
+    .fur-after {
+        right: 0;
+        background-image: url(../img/fur-after.jpg);
+    }
+
+    .divider {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 2px); /* Линия по центру */
+        width: 4px;
+        background-color: black;
+        cursor: ew-resize;
+    }
+
+    .main-title {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .title__point {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 60px;
+        padding-left: 50px;
+    }
+
+    .title__point__item {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-left: 5px;
+    }
+
+    .title__point__square {
+        width: 10px;
+        height: 10px;
+        background-color: var(--main-red);
+        position: relative;
+    }
+
+    .title__point__square::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -25%;
+        left: -25%;
+
+        outline: 2px solid var(--main-red);
+    }
+
+    .title__func {
+        margin-top: 30px;
+        background-color: #fff;
+        width: max-content;
+    }
+
+    .title__func__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .title__func__cont {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 5px;
+        width: max-content;
+    }
+
+    .title__func__block {
+        display: flex;
+        gap: 20px;
+
+        border-radius: 5px;
+
+        width: max-content;
+    }
+
+    .title__func__block input {
+        padding: 10px 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+
+    .title__func__block button {
+        background-color: var(--main-red);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .title__func__check {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .title__func__check p {
+        font-size: 11px;
+    }
+
+    .title__func__check a {
+        color: var(--main-red);
+        text-decoration: underline;
+    }
+
+    .title__foot {
+        margin: auto auto 0 auto;
+        display: flex;
+        gap: 20px;
+        border-radius: 5px;
+    }
+
+    .title__foot button {
+        padding: 10px 20px;
+        background-color: #fff;
+        border: 5px solid var(--main-red);
+        border-radius: 5px;
+        color: var(--main-red);
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+/* @media screen and (min-width: 1500px) {
+    .title {
+        padding: 30px 50px;
+        background-image: url(../img/fur-bef.jpg);
+        background-size: cover;
+        height: 135vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fur-bef {
+        background-image: url(../img/fur-bef.jpg);
+    }
+
+    .fur-after {
+        background-image: url(../img/fur-after.jpg);
+    }
+
+    .background-image {
+        background-size: cover;
+        height: 100%;
+    }
+} */
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (min-width: 1000px) {
+    .all-title {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .type__title {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .type__title__item {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .type__title__item img {
+        transform: rotate(-45deg);
+    }
+
+    .type__title__item p {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .type__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 30px;
+        margin-top: 30px;
+    }
+
+    .type__item {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        background-color: #f4f3f1;
+    }
+
+    .type__item img {
+        width: 50%;
+        max-height: 205px;
+    }
+
+    .type__item__disc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .type__item__disc h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .type__item__disc__price span {
+        color: var(--main-red);
+    }
+
+    .type__item__disc__button {
+        height: 30px;
+        color: #fff;
+        background-color: var(--main-red);
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+}
