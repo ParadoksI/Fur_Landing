@@ -1,4 +1,9 @@
 const divider = document.getElementById("divider");
+
+// Устанавливаем изначальное положение линии
+divider.style.left = `calc(50% - 2px)`;
+
+// Добавляем обработчики событий для перемещения линии
 let isDragging = false;
 
 divider.addEventListener("mousedown", function(event) {
@@ -11,11 +16,12 @@ document.addEventListener("mousemove", function(event) {
     const titleWidth = divider.parentNode.offsetWidth;
     const percentX = (mouseX / titleWidth) * 100;
 
-    divider.style.left = `calc(${percentX}% - 2px)`; // Положение линии
+    // Изменяем положение линии
+    divider.style.left = `calc(${percentX}% - 2px)`;
 
-    // Изменение ширины блоков с изображениями
-    divider.previousElementSibling.style.width = `${percentX}%`;
-    divider.nextElementSibling.style.width = `${100 - percentX}%`;
+    // Обновляем clip-path для fur-after, чтобы она не выходила за пределы линии
+    const furAfter = document.querySelector('.fur-after');
+    furAfter.style.clipPath = `inset(0 0 0 calc(${percentX}% + 2px))`; // Обновляем значение clip-path, учитывая новую позицию линии
   }
 });
 

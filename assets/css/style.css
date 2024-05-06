@@ -1,19 +1,130 @@
 :root {
     --main-red: #ff2600;
+    --next-rede : #f65f45;
     --grey-style: #f2f2f2;
+    --sec-grad: #5b2c2c;
+    --sec-blue: #5488cf;
 }
 
 body {
     background-color: #f0f0f0;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "TildaSans";
 }
 
 @media screen and (min-width: 1000px) {
+    .container {
+        padding: 0px 30px;
+    }
+
+    /* !!!!!!!!!!!!!!CALC!!!!!!!!!!!!!!!!!!!!! */
+
+    .calculator {
+        position: fixed;
+        top: 30%;
+        right: 0;
+        background-color: #fff;
+        border-radius: 15px 0px 0px 15px;
+        padding: 5px 0px 5px 10px;
+        border: 1px solid rgba(0,0,0,.4);
+        border-right: none;
+        cursor: pointer;
+        z-index: 988;
+    }
+
+    .calculator img { 
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .calculator__menu { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 15px 30px;
+        z-index: 1000;
+        width: 75vw;
+        display: none;
+    }
+
+    .calculator__title { 
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .calculator__title h4 { 
+        background-color: var(--main-red);
+        border-radius: 10px;
+        border: 1px solid #f65f45;
+        padding: 10px 30px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .calculator__steps { 
+        display: flex;
+        gap: 20px;
+    }
+
+    .calculator__step { 
+        text-align: center;
+        border: 1px solid rgba(0,0,0,.2);
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+
+    .calculator__step.active { 
+        border: 1px solid rgba(255,0,0,.6);
+    }
+
+    .calculator__step h5 { 
+        font-size: 20px;
+    }
+
+    .calculator__menu h3 { 
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .calculator__type { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 30px;
+        max-width: 500px;
+        margin: 50px auto 0px auto;
+    }
+
+    .calculator__type__item { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .calculator__type__item__func { 
+        display: flex;
+        gap: 15px;
+    }
+
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
     .header {
         padding: 0px 30px;
         background-color: #f2f2f2;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .header__wrapper {
@@ -73,7 +184,7 @@ body {
     }
 
     .header__top__phone__link a {
-        color: var(--main-red);
+        color: var(--sec-blue);
         font-weight: 500;
     }
 
@@ -117,20 +228,32 @@ body {
     }
 
     .header__top__button__price {
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
         color: #fff;
-        background-color: #ff2600;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 24px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
     }
 
     .header__top__button__call {
-        color: var(--main-red);
-        background-color: #fff;
-        border: 1px solid var(--main-red);
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
+        color: #fff;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 24px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
     }
 
     .header__foot__list {
         display: flex;
         gap: 10px;
         overflow-x: scroll;
+        padding: 5px 0px;
     }
 
     .header__foot__list::-webkit-scrollbar {
@@ -142,12 +265,45 @@ body {
         background-color: #c0c0c0; /* Цвет полосы */
     }
 
+    .header__foot__list li a {
+        color: #000;
+    }
+
     .header__foot__list li {
-        text-decoration: underline;
-        font-size: 16px;
+        position: relative;
+        font-size: 20px;
         font-weight: 500;
         text-wrap: nowrap;
         color: #000;
+    }
+
+    .header__foot__list li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0px;
+        background-color: #ff2600;
+        transition: 0.3s ease all;
+    }
+
+    .header__foot__list li:hover::after {
+        width: 0;
+    }
+
+    .header__foot__list li::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0px;
+        background-color: var(--sec-blue);
+        transition: 0.3s ease all;
+    }
+    .header__foot__list li:hover::before {
+        width: 100%;
     }
 }
 
@@ -159,6 +315,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 60px;
+        margin-top: 156.2px;
     }
 
     .title {
@@ -174,9 +331,10 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 50%; /* Делим блок пополам */
+        width: 100%; /* Обе картинки занимают всю доступную ширину контейнера */
         background-size: cover;
         background-position: center;
+        z-index: -1;
     }
 
     .fur-bef {
@@ -187,21 +345,73 @@ body {
     .fur-after {
         right: 0;
         background-image: url(../img/fur-after.jpg);
+        clip-path: inset(
+            0 0 0 calc(50% + 2px)
+        ); /* Обрезаем fur-after до половины ширины, плюс 2px для учета ширины линии */
     }
 
     .divider {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: calc(50% - 2px); /* Линия по центру */
+        left: calc(50% - 2px); /* Положение линии по центру */
         width: 4px;
         background-color: black;
         cursor: ew-resize;
+        z-index: 1;
+    }
+
+    .divider-circle {
+        position: absolute;
+        border: 4px solid #000;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        user-select: none;
+    }
+
+    .divider-left {
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 12px);
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 13px;
+        user-select: none;
+    }
+
+    .divider-right {
+        position: absolute;
+        top: calc(50% + 0.5px);
+        left: calc(50% + 12px);
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 13px;
+        user-select: none;
+    }
+
+    .divider-right img,
+    .divider-left img {
+        scale: 1.5;
     }
 
     .main-title {
         font-size: 40px;
         font-weight: 600;
+        font-family: "drukcur";
+        z-index: 12;
+        color: transparent; /* Делаем текст прозрачным */
+        background-image: linear-gradient(
+            to bottom,
+            var(--main-red),
+            #b90e0e
+        ); /* Создаем градиент от красного к черному */
+        -webkit-background-clip: text; /* Применяем градиент только к тексту */
+        background-clip: text;
     }
 
     .title__point {
@@ -210,6 +420,7 @@ body {
         gap: 15px;
         margin-top: 60px;
         padding-left: 50px;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .title__point__item {
@@ -239,9 +450,10 @@ body {
     }
 
     .title__func {
-        margin-top: 30px;
+        margin-top: 20px;
         background-color: #fff;
         width: max-content;
+        z-index: 2;
     }
 
     .title__func__title {
@@ -261,25 +473,37 @@ body {
     .title__func__block {
         display: flex;
         gap: 20px;
-
+        justify-content: space-between;
         border-radius: 5px;
-
-        width: max-content;
+        padding: 5px 10px;
     }
 
     .title__func__block input {
         padding: 10px 20px;
         border: 1px solid #000;
         border-radius: 5px;
+        width: 100%;
     }
 
     .title__func__block button {
-        background-color: var(--main-red);
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
         color: #fff;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
         font-size: 24px;
         font-weight: 600;
         padding: 5px 15px;
         border-radius: 5px;
+        transition: 0.3s all ease;
+        width: 100%;
+        text-wrap: nowrap;
+    }
+
+    .title__func__block button:hover {
+        border: 1px solid var(--main-red);
+        background-color: #fff;
+        background: none;
+        color: var(--main-red);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     .title__func__check {
@@ -302,16 +526,18 @@ body {
         display: flex;
         gap: 20px;
         border-radius: 5px;
+        z-index: 2;
     }
 
     .title__foot button {
-        padding: 10px 20px;
-        background-color: #fff;
-        border: 5px solid var(--main-red);
-        border-radius: 5px;
-        color: var(--main-red);
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
+        color: #fff;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 24px;
         font-weight: 600;
-        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
     }
 }
 
@@ -347,6 +573,7 @@ body {
         font-size: 32px;
         font-weight: 600;
         text-align: center;
+        font-family: "drukcur";
     }
 
     .type__title {
@@ -407,12 +634,264 @@ body {
     }
 
     .type__item__disc__button {
-        height: 30px;
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
         color: #fff;
-        background-color: var(--main-red);
-        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
         font-size: 20px;
         font-weight: 600;
         padding: 5px 10px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
     }
+
+    .type__item__disc__button:hover {
+        outline: 1px solid var(--main-red);
+        background-color: #fff;
+        background: none;
+        color: var(--main-red);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (min-width: 1000px) {
+    .service__list {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 40px;
+    }
+
+    .service__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        padding: 15px 10px;
+        border: 1px solid #000;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .service__item__img {
+        border-radius: 15px;
+    }
+
+    .service__item__title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .service__item__price span {
+        color: var(--main-red);
+    }
+
+    .service__item__show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+    }
+
+    .service__item__show img {
+        width: 24px;
+    }
+
+    .service__item__under span {
+        color: var(--main-red);
+    }
+
+    .service__item__submit {
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
+        color: #fff;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
+    }
+
+    /* !!!!!!!!!!!!!!!!!!!!!!!!ОКНО УСЛУ!!!!!!!!!!!!!!!!!!!!!! */
+    .page-blur {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        z-index: -1;
+
+        opacity: 0;
+        transition: 0.5s ease opacity;
+    }
+
+    .page-blur.on {
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .service__item__list {
+        position: fixed;
+        width: 50%;
+        height: 500px;
+        max-height: 500px;
+        overflow-y: scroll;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        font-size: 20px;
+        border: 1px solid #000;
+        border-radius: 15px 0px 0px 15px;
+        z-index: 1000;
+        display: none;
+    }
+
+    .service__item__list.show {
+        display: block;
+    }
+
+    .service__item__list::-webkit-scrollbar {
+        width: 5px;
+        background-color: #fff;
+    }
+
+    .service__item__list::-webkit-scrollbar-thumb {
+        background-color: var(--main-red);
+        border-radius: 15px;
+    }
+
+    .service__item__list__container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        padding: 15px 30px;
+    }
+
+    .service__item__list__tab {
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service__item__list__main span {
+        color: var(--main-red);
+    }
+
+    .service__item__list__sec span {
+        color: var(--main-red);
+    }
+
+    .service__item__list__sec {
+        padding-left: 30px;
+    }
+
+    .close__service__item__list {
+        position: absolute;
+        font-size: 32px;
+        font-weight: 600;
+        color: #000;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .close__service__item__list:hover {
+        color: var(--main-red);
+    }
+}
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (min-width: 1000px) {
+    #Now {
+        position: sticky;
+        top: 0;
+    }
+
+    .now {
+        border-radius: 15px 15px 0px 0px;
+        background-color: #fff;
+        border: 0.1px solid rgba(0, 0, 0, 0.2);
+        padding: 30px 0px 0px 0px;
+    }
+
+    .now__block {
+        display: flex;
+        gap: 50px;
+    }
+
+    .now__card {
+        width: 100%;
+        border: 1px solid var(--main-red);
+        padding: 15px 30px 30px 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .now__card h3 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .now__button__whatsapp,
+    .now__button__telegramm {
+        padding: 10px 30px;
+        display: flex;
+        gap: 10px;
+        border-radius: 15px;
+        color: #fff;
+    }
+
+    .now__button__whatsapp {
+        background-color: #25d366;
+    }
+
+    .now__button__telegramm {
+        background-color: #0088cc;
+    }
+
+    .now__card__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .now__card__form input {
+        width: 100%;
+        padding: 10px 30px;
+        border-radius: 15px;
+        border: 1px solid #000;
+    }
+
+    .now__form__button {
+        background: linear-gradient(to bottom, var(--main-red), #5b2c2c);
+        color: #fff;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: 0.3s all ease;
+    }
+}
+
+@media screen and (max-width: 999px) {
 }

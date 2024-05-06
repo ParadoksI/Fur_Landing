@@ -7,12 +7,14 @@
         <title>Мебель</title>
 
         <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/fonts.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header">
+        <div class="page-blur "></div>
+        <header class="header" id="header">
             <div class="wrapper header__wrapper">
-                <div class="header__top">
+                <div class="header__top" id="header__top">
                     <div class="header__top__logo">
                         <img src="./assets/img/logo.svg" alt="logo" />
                         <p>Обивка в дом</p>
@@ -49,28 +51,70 @@
                 <div class="header__foot">
                     <ul class="header__foot__list">
                         <li><a href="">Главная</a></li>
-                        <li><a href="">Калькулятор</a></li>
+                        <li><a href="">Услуги</a></li>
                         <li><a href="">Виды мебели</a></li>
-                        <li><a href="">Перечень услуг</a></li>
-                        <li><a href="">Расчитаем цену</a></li>
-                        <li><a href="">Этапы работы</a></li>
                         <li><a href="">Примеры работ</a></li>
-                        <li><a href="">Ткани материалов</a></li>
-                        <li><a href="">Наши цены</a></li>
+                        <li><a href="">Цены</a></li>
+                        <li><a href="">Ткани</a></li>
+                        <li><a href="">Этапы работы</a></li>
+                        <li><a href="">Калькулятор</a></li>
                         <li><a href="">О нас</a></li>
-                        <li><a href="">Отзывы</a></li>
-                        <li><a href="">Весь перечень услуг</a></li>
-                        <li><a href="">Оставь заявку сейчас!</a></li>
+                        <li><a href="">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <main class="main">
+        <div class="calculator" id="calc">
+            <img src="./assets/img/calculator.svg" alt="">
+        </div>
+        <div class="calculator__menu">
+            <div class="calculator__title">
+                <h4>Калькулятор</h4>
+                <div class="calculator__steps">
+                    <div class="calculator__step active">
+                        <h5>Шаг 1</h5>
+                        <p>Тип мебели</p>
+                    </div>
+                    <div class="calculator__step">
+                        <h5>Шаг 2</h5>
+                        <p>Размер мебели</p>
+                    </div>
+                    <div class="calculator__step">
+                        <h5>Шаг 3</h5>
+                        <p>Тип ткани</p>
+                    </div>
+                    <div class="calculator__step">
+                        <h5>Шаг 4</h5>
+                        <p>Результат</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Выберите <span id="calc-title">тип мебели</span></h3>
+            <div class="calculator__type">
+                <div class="calculator__type__item">
+                    <div class="calculator__type__item__func">
+                        <input type="radio" >
+                        <p>Диван</p>
+                    </div>
+                    <img src="./assets/img/Sofa.svg" alt="">
+                </div>
+            </div>
+        </div>
             <div class="wrapper main__wrapper">
                 <section class="title" id="title">
                     <div class="fur-bef"></div>
                     <div class="fur-after"></div>
-                    <div class="divider" id="divider"></div>
+                    <div class="divider" id="divider">
+                        <div class="divider-circle">
+                            <div class="divider-left">
+                                <img src="./assets/img/arrow.svg" alt="" />
+                            </div>
+                            <div class="divider-right">
+                                <img src="./assets/img/arrow-rot.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
                     <h1 class="main-title">
                         Перетяжка и ремонт мягкой мебели в Калуге
                     </h1>
@@ -127,119 +171,829 @@
                         <button>Заказать звонок</button>
                     </div>
                 </section>
-                <section class="type">
-                    <h1 class="all-title">Виды мебели</h1>
-                    <div class="type__title">
-                        <div class="type__title__item">
-                            <img
-                                src="./assets/img/star_icon_227350.svg"
-                                alt=""
-                            />
-                            <p>Перетяжка</p>
-                        </div>
-                        <div class="type__title__item">
-                            <img
-                                src="./assets/img/star_icon_227350.svg"
-                                alt=""
-                            />
-                            <p>Ремонт</p>
-                        </div>
-                        <div class="type__title__item">
-                            <img
-                                src="./assets/img/star_icon_227350.svg"
-                                alt=""
-                            />
-                            <p>Реставрация</p>
-                        </div>
-                        <div class="type__title__item">
-                            <img
-                                src="./assets/img/star_icon_227350.svg"
-                                alt=""
-                            />
-                            <p>Обивка</p>
-                        </div>
-                    </div>
-                    <div class="type__list">
-                        <div class="type__item">
-                            <img src="./assets/img/диван угловой.jpg" alt="" />
-                            <div class="type__item__disc">
-                                <h2>Диваны</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 4000руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                <section class="service">
+                    <div class="container">
+                        <h2 class="all-title">Перечень услуг</h2>
+                        <div class="service__list">
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Перетяжка мебели</h3>
+                                    <p class="service__item__price">
+                                        От <span>2000&#8381;</span>
+                                    </p>
+                                </div>
+                                <img
+                                    class="service__item__img"
+                                    src="./assets/img/перетяжка мебели.jpeg"
+                                    alt=""
+                                />
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Перетяжка на
+                                            дому или в мастерской
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Выезд мастера
+                                            бесплатно
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Выполним
+                                            перетяжку любой мягкой мебели
+                                        </p>
+                                        
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> Любые виды
+                                                диванов и кресел
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> Стулья
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> Кровати
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> Кухонные и спальные мягкие гарнитуры
+                                            </p>
+                                            <p class="service__item__list__main">
+                                                <span>&#9675;</span> Офисная:
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> офисные диваны
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> офисные кресла и стулья
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span>компьютерные кресла и др.
+                                            </p>
+                                            <p class="service__item__list__main">
+                                                <span>&#9675;</span> Специализированная:
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> кушетки
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> парикмахерские кресла
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> кресла для маникюра
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> массажные кресла и кушетки
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> кресла, диваны и стулья для баров, ресторанов, кафе, гостиниц
+                                            </p>
+                                        </div>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Комплексная перетяжка, включая все необходимые работы:
+                                        </p>
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена обивки
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена наполнителя
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена механизмов и фурнитуры 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена внутренних чехлов 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена подкладочного материала 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> ремонт и реставрация 
+                                            </p>
+
+                                        </div>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Большой выбор тканей для перетяжки 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Перетяжка всей мебели или отдельных ее частей 
+                                        </p>
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="type__item">
-                            <img src="./assets/img/кресло.jpg" alt="" />
-                            <div class="type__item__disc">
-                                <h2>Кресла</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 2000руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Реставрация мебели</h3>
+                                    <p class="service__item__price">
+                                        От <span>1500&#8381;</span>
+                                    </p>
+                                </div>
+                                <img
+                                    class="service__item__img"
+                                    src="./assets/img/реставрация.jpg"
+                                    alt=""
+                                />
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Удаление сколов и царапин 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Обновление лакокрасочного покрытия:
+                                        </p>
+                                        
+                                        
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> удаление старой краски и лака
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> шпатлевка
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> шлифовка
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> покраска
+                                            </p>
+                                            
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> лакировка
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> роспись деревянных элементов
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена и ремонт старой фурнитуры (петель, ручек, других креплений)
+                                            </p>
+                                            
+                                        </div>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Перетяжка старой обивки 
+                                        </p>
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> полная и частичная перетяжка диванов и кресел 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> полный и частичный ремонт диванов и кресел
+                                            </p>
+                                           
+
+                                        </div>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Демонтаж и разбор мебели для выполнения работ по реставрации
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Сборка  
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Вывоз и доставка мебели для выполнения работ  
+                                        </p>
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="type__item">
-                            <img src="./assets/img/стул.jpg" alt="" />
-                            <div class="type__item__disc">
-                                <h2>Стулья</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 600руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Ремонт мебели</h3>
+                                    <p class="service__item__price">
+                                        От <span>500&#8381;</span>
+                                    </p>
+                                </div>
+                                <div class="service__item__img__container">
+                                    <img
+                                        class="service__item__img"
+                                        src="./assets/img/ремонт мебели.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт любой обивки
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт любой сложности 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Полный и частичный ремонт мягкой мебели
+                                        </p>
+                                        
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт отдельных частей 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт в нашей мастерской
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт на дому
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Мы выполним любые работы по ремонту:
+                                        </p>
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> перетяжку старой обивки 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> удаление сколов и царапин 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> обновление лакокрасочного покрытия
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена подкладочного материала 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена наполнителя
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> ремонт механизмов (пружины, ролики, заглушки,  соединители, заглушки, газлифты, защитные короба и др)
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена подкладочного материала 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замена наполнителей и др. 
+                                            </p>
+
+                                        </div>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонтные работы выполняют опытные мастера 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Наши мастера предложат Вам на выбор:
+                                        </p>
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> варианты ремонта и реставрации 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> любые виды тканей 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> варианты дизайна обивки
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> выполнение демонтажа и разборка мебели
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> вывоз и доставку 
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> сборку мебели на дому
+                                            </p>
+
+                                        </div>
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="type__item">
-                            <img
-                                src="./assets/img/панели_двери-Photoroom.png-Photoroom.png"
-                                alt=""
-                            />
-                            <div class="type__item__disc">
-                                <h2>Двери\панели</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 6000руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Замена обивки</h3>
+                                    <p class="service__item__price">
+                                        От <span>500&#8381; за метр</span>
+                                    </p>
+                                </div>
+                                <div class="service__item__img__container">
+                                    <img
+                                        class="service__item__img"
+                                        src="./assets/img/замена обивки.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Замена любой обивки 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Изменение дизайна мебели
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Изменение цвета мебели
+                                        </p>
+                                        
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Обивка качественными современными тканями:
+                                        </p>
+                                        
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> натуральная кожа
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span>велюр
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замша
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> нубук
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> искусственная кожа
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> флок
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> жаккард
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> шенилл
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> рогожка и др. 
+                                            </p>
+
+                                        </div>
+                                        
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="type__item">
-                            <img src="./assets/img/кровать.jpg" alt="" />
-                            <div class="type__item__disc">
-                                <h2>Кровати</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 3000руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Замена наполнителя</h3>
+                                    <p class="service__item__price">
+                                        От <span>400&#8381; за лист</span>
+                                    </p>
+                                </div>
+                                <div class="service__item__img__container">
+                                    <img
+                                        class="service__item__img"
+                                        src="./assets/img/замена наполнителя.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Частичная замена наполнителя  
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Полная замена наполнителя 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Замена наполнителей любого вида
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> пружинные наполнители
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> наполнители из пенополиуретана
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> синтетические наполнители 
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> природные наполнители
+                                        </p>
+                                        
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Большой выбор материала для наполнителей:
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> натуральный латекс
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> полиуретан
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> холофайбер
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> синтепон
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> синтепух
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> поролон
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> комфорель
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> дюрафил 
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> кокосовый очес и др. 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span>Замена внутренних чехлов(велютина) 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Замена подкладочного материала
+                                        </p>
+
+                                        
+                                        <div class="service__item__list__tab">
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> натуральная кожа
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span>велюр
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> замша
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> нубук
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> искусственная кожа
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> флок
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> жаккард
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> шенилл
+                                            </p>
+                                            <p class="service__item__list__sec">
+                                                <span>&#9675;</span> рогожка и др. 
+                                            </p>
+
+                                        </div>
+                                        
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="type__item">
-                            <img src="./assets/img/офисное кресло.jpg" alt="" />
-                            <div class="type__item__disc">
-                                <h2>Бизнес-мебель</h2>
-                                <p class="type__item__disc__price">
-                                    Цена: <span>от 500руб.</span>
-                                </p>
-                                <button class="type__item__disc__button">
-                                    ПОДРОБНЕЕ
+                            <div class="service__item">
+                                <div class="service__item__title">
+                                    <h3>Ремонт частей мебели</h3>
+                                    <p class="service__item__price">
+                                        От <span>600&#8381;</span>
+                                    </p>
+                                </div>
+                                <div class="service__item__img__container">
+                                    <img
+                                        class="service__item__img"
+                                        src="./assets/img/ремонт частей мебели.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <button
+                                    id="showServiceList"
+                                    class="service__item__show"
+                                >
+                                    Полный перечень услуг
+                                    <img
+                                        src="./assets/img/arrow-bar-down.svg"
+                                        alt=""
+                                    />
                                 </button>
+                                <p class="service__item__under">
+                                    *выезд мастера <span>бесплатный</span>
+                                </p>
+                                <button class="service__item__submit">
+                                    Заказать замер
+                                </button>
+                                <div class="service__item__list">
+                                    <div class="service__item__list__container">
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт и реставрация отдельных элементов 
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Пошив подушек
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Перетяжка подушек и матрацев для кресел
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span>Перетяжка подлокотников и спинки диванов
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Перетяжка подушек и матрацев для диванов
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Перетяжка подлокотников и спинки кресел
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Перетяжка изголовья кроватей
+                                        </p>
+                                        
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Ремонт механизмов дивана
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span>Ремонт механизмов кресла
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Ремонт механизмов кровати
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Ремонт и замена фурнитуры:
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> ножки
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> газлифты
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> пружины
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> ролики
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> соединители 
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> латодержатели  
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> защитные короба
+                                        </p>
+                                        <p class="service__item__list__sec">
+                                            <span>&#9675;</span> заглушки и др.
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span>Замена подкладочного материала
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9679;</span> Замена наполнителя
+                                        </p>                        
+                                        <p
+                                            class="close__service__item__list"
+                                            id="closeServiceList"
+                                        >
+                                            &times;
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section class="type">
+                    <div class="container">
+                        <h2 class="all-title">Виды мебели</h2>
+                        <div class="type__title">
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Перетяжка</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Ремонт</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Реставрация</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Обивка</p>
+                            </div>
+                        </div>
+                        <div class="type__list">
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/диван угловой.jpg"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Диваны</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 4000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/кресло.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Кресла</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 2000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/стул.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Стулья</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 600руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/панели_двери-Photoroom.png-Photoroom.png"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Двери\панели</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 6000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/кровать.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Кровати</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 3000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/офисное кресло.jpg"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Бизнес-мебель</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 500руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="now" id="Now">
+                    <div class="container">
+                        <div class="now__block">
+                            <div class="now__card">
+                                <h3>Рассчитаем цену прямо сейчас!</h3>
+                                <p>напишите нам в любой удобный для Вас месседжер</p>
+                                <a class="now__button__whatsapp" href="#">
+                                    <button>Написать в Whatsapp</button>
+                                    <img src="./assets/img/whatsapp.svg" alt="">
+                                </a>
+                                <a class="now__button__telegramm" href="#">
+                                    <button>Написать в Telegramm</button>
+                                    <img src="./assets/img/telegram.svg" alt="">
+                                </a>
+                                <p>или введите свой номер телефона, и мы перезвоним вам в течении 10 минут</p>
+                                <form class="now__card__form" action="#">
+                                    <input placeholder="Ваше имя" required type="text" />
+                                    <input
+                                        placeholder="+7 (___) ___-__-__"
+                                        type="text"
+                                        required
+                                    />
+                                    <button class="now__form__button" type="submit">Рассчитать цену</button>
+                                </form>
+                            </div>
+                            <img class="now__image" src="./assets/img/Beg/5. Расчитаем цену/фото дивана РАССЧИТАЕМ ЦЕНУ.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
             </div>
+            <br><br><br><br><br><br><br><br><br><br>
         </main>
+        <script src="./assets/js/lib/jquery-3.6.3.min.js"></script>
 
+        <script src="./assets/js/now.js"></script>
+        <script src="./assets/js/more-serv.js"></script>
+        <script src="./assets/js/scroll.js"></script>
         <script src="./assets/js/scripts.js"></script>
     </body>
 </html>
