@@ -1,6 +1,13 @@
 $(document).ready(function () {
     $('#calc').click(function () {
-        $('.calculator__menu').toggleClass('active');
+        if ($('.phone__menu').hasClass('active')) { 
+            $('.calculator__menu').toggleClass('active');
+            $('.phone__menu').removeClass('active');
+        }
+        else { 
+            $('.calculator__menu').toggleClass('active');
+        }
+        
     });
 
 

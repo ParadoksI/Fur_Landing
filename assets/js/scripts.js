@@ -28,3 +28,5 @@ document.addEventListener("mousemove", function(event) {
 document.addEventListener("mouseup", function(event) {
   isDragging = false;
 });
+
+// toggle

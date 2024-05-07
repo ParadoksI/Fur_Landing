@@ -20,6 +20,17 @@ $(document).ready(function() {
         $('.page-blur').removeClass('on');
     });
 
+    $(document).on('click', function(event) {
+        // Проверяем, был ли клик вне .service__item__show и .service__item__list
+        if (!$(event.target).closest('.service__item__show, .service__item__list').length) {
+            // Скрываем .service__item__list
+            $('.service__item__list').slideUp();
+            
+            // Удаляем класс для заднего фона
+            $('.page-blur').removeClass('on');
+        }
+    });
+
     // Добавить функцию клика на документ
     
 });

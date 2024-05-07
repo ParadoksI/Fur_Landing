@@ -6,12 +6,16 @@
 
         <title>Мебель</title>
 
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/fonts.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <div class="page-blur "></div>
+        <div class="page-blur"></div>
         <header class="header" id="header">
             <div class="wrapper header__wrapper">
                 <div class="header__top" id="header__top">
@@ -65,206 +69,312 @@
             </div>
         </header>
         <main class="main">
-        <div class="calculator" id="calc">
-            <img src="./assets/img/calculator.svg" alt="">
-        </div>
-        <div class="phone" id="phone">
-            <img src="./assets/img/telephone.svg" alt="">
-        </div>
-        <div class="calculator__menu">
-            <div class="calculator__title">
-                <h4>Калькулятор</h4>
-                <div class="calculator__steps">
-                    <div class="calculator__step s1 active">
-                        <h5>Шаг 1</h5>
-                        <p>Тип мебели</p>
-                    </div>
-                    <div class="calculator__step s2">
-                        <h5>Шаг 2</h5>
-                        <p>Размер мебели</p>
-                    </div>
-                    <div class="calculator__step s3">
-                        <h5>Шаг 3</h5>
-                        <p>Тип ткани</p>
-                    </div>
-                    <div class="calculator__step s4">
-                        <h5>Шаг 4</h5>
-                        <p>Результат</p>
-                    </div>
-                </div>
+            <div class="calculator" id="calc">
+                <img src="./assets/img/calculator.svg" alt="" />
             </div>
-            <h3>Выберите <span id="calc-title">тип мебели</span></h3>
-            <div class="calculator__container">
-                <div class="calculator__type show" id="cType">
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Диван</p>
+            <div class="phone" id="phone">
+                <img src="./assets/img/telephone.svg" alt="" />
+            </div>
+            <div class="calculator__menu">
+                <div class="calculator__title">
+                    <h4>Калькулятор</h4>
+                    <div class="calculator__steps">
+                        <div class="calculator__step s1 active">
+                            <h5>Шаг 1</h5>
+                            <p>Тип мебели</p>
                         </div>
-                        <img src="./assets/img/Sofa.svg" alt="">
-                    </div>
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Диван угловой</p>
+                        <div class="calculator__step s2">
+                            <h5>Шаг 2</h5>
+                            <p>Размер мебели</p>
                         </div>
-                        <img src="./assets/img/SofaCor.svg" style="height: 33px;" alt="">
-                    </div>
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Кресло</p>
+                        <div class="calculator__step s3">
+                            <h5>Шаг 3</h5>
+                            <p>Тип ткани</p>
                         </div>
-                        <img src="./assets/img/armchair.svg" alt="">
-                    </div>
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Кровать</p>
+                        <div class="calculator__step s4">
+                            <h5>Шаг 4</h5>
+                            <p>Результат</p>
                         </div>
-                        <img src="./assets/img/bed.svg" alt="">
-                    </div>
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Стул</p>
-                        </div>
-                        <img src="./assets/img/chair.svg" alt="">
-                    </div>
-                    <div class="calculator__type__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Другое</p>
-                        </div>
-                        <img src="./assets/img/other.svg" alt="">
                     </div>
                 </div>
-                <div class="calculator__place" id="cPlace">
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>1-но местный</p>
+                <h3>Выберите <span id="calc-title">тип мебели</span></h3>
+                <div class="calculator__container">
+                    <div class="calculator__type show" id="cType">
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Диван</p>
+                            </div>
+                            <img src="./assets/img/Sofa.svg" alt="" />
                         </div>
-                        <img src="./assets/img/p1.svg" alt="">
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Диван угловой</p>
+                            </div>
+                            <img
+                                src="./assets/img/SofaCor.svg"
+                                style="height: 33px"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Кресло</p>
+                            </div>
+                            <img src="./assets/img/armchair.svg" alt="" />
+                        </div>
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Кровать</p>
+                            </div>
+                            <img src="./assets/img/bed.svg" alt="" />
+                        </div>
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Стул</p>
+                            </div>
+                            <img src="./assets/img/chair.svg" alt="" />
+                        </div>
+                        <div class="calculator__type__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Другое</p>
+                            </div>
+                            <img src="./assets/img/other.svg" alt="" />
+                        </div>
                     </div>
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>2-ух местное</p>
+                    <div class="calculator__place" id="cPlace">
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>1-но местный</p>
+                            </div>
+                            <img src="./assets/img/p1.svg" alt="" />
                         </div>
-                        <img src="./assets/img/p2.svg" style="height: 33px;" alt="">
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>2-ух местное</p>
+                            </div>
+                            <img
+                                src="./assets/img/p2.svg"
+                                style="height: 33px"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>3-х местное</p>
+                            </div>
+                            <img src="./assets/img/p3.svg" alt="" />
+                        </div>
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>4-х местное</p>
+                            </div>
+                            <img src="./assets/img/p4.svg" alt="" />
+                        </div>
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Спальное место</p>
+                            </div>
+                            <img src="./assets/img/bed.svg" alt="" />
+                        </div>
+                        <div class="calculator__place__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Другое</p>
+                            </div>
+                            <img src="./assets/img/other.svg" alt="" />
+                        </div>
                     </div>
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>3-х местное</p>
+                    <div class="calculator__mat" id="cMat">
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Шенил</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/shenil.svg"
+                                alt=""
+                            />
                         </div>
-                        <img src="./assets/img/p3.svg" alt="">
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Рогожка</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/rogo.svg"
+                                style="height: 33px"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Кожа</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/skin.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Натуральная кожа</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/nskin.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Жаккрд</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/jacard.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="calculator__mat__item">
+                            <div class="calculator__type__item__func">
+                                <input type="radio" />
+                                <p>Другое</p>
+                            </div>
+                            <img
+                                class="calc__mat__image"
+                                src="./assets/img/skinother.svg"
+                                alt=""
+                            />
+                        </div>
                     </div>
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>4-х местное</p>
-                        </div>
-                        <img src="./assets/img/p4.svg" alt="">
-                    </div>
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Спальное место</p>
-                        </div>
-                        <img src="./assets/img/bed.svg" alt="">
-                    </div>
-                    <div class="calculator__place__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Другое</p>
-                        </div>
-                        <img src="./assets/img/other.svg" alt="">
+                    <div class="calculator__form__container" id="cForm">
+                        <form action="#" class="calculator__form">
+                            <div class="calculator__form__check">
+                                <div class="calculator__form__check__cont">
+                                    <input type="radio" checked />
+                                    <p>По телефону</p>
+                                </div>
+                                <div class="calculator__form__check__cont">
+                                    <input type="radio" />
+                                    <p>SMS</p>
+                                </div>
+                                <div class="calculator__form__check__cont">
+                                    <input type="radio" />
+                                    <p>Viber</p>
+                                </div>
+                                <div class="calculator__form__check__cont">
+                                    <input type="radio" />
+                                    <p>Whatsapp</p>
+                                </div>
+                            </div>
+                            <input
+                                type="hidden"
+                                value="По телефону"
+                                name=""
+                                id="cForm-hidden"
+                            />
+                            <input
+                                required
+                                class="calculator__form__data"
+                                type="text"
+                                placeholder="Ваше имя"
+                            />
+                            <input
+                                required
+                                class="calculator__form__data"
+                                type="text"
+                                placeholder="Ваш номер телефона"
+                            />
+                            <div class="calculator__form__discount">
+                                <input type="radio" checked />
+                                Получить скидку на обивочный материал
+                            </div>
+                            <button
+                                class="calculator__form__submit"
+                                type="submit"
+                            >
+                                <img
+                                    src="./assets/img/check2-circle.svg"
+                                    alt=""
+                                />
+                                Готово
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div class="calculator__mat" id="cMat">
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Шенил</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/shenil.svg" alt="">
-                    </div>
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Рогожка</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/rogo.svg" style="height: 33px;" alt="">
-                    </div>
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Кожа</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/skin.svg" alt="">
-                    </div>
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Натуральная кожа</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/nskin.svg" alt="">
-                    </div>
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Жаккрд</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/jacard.svg" alt="">
-                    </div>
-                    <div class="calculator__mat__item">
-                        <div class="calculator__type__item__func">
-                            <input type="radio" >
-                            <p>Другое</p>
-                        </div>
-                        <img class="calc__mat__image" src="./assets/img/skinother.svg" alt="">
-                    </div>
-                </div>
-                <div class="calculator__form__container" id="cForm">
-                    <form action="#" class="calculator__form" >
+
+                <button class="calculator__next">Далее &#8594;</button>
+            </div>
+            <div class="phone__menu">
+                <div class="phone__container">
+                    <h3>
+                        Оставь заявку сейчас, и получи <span>скидку 40%!</span>
+                    </h3>
+                    <form action="#" class="calculator__form">
                         <div class="calculator__form__check">
                             <div class="calculator__form__check__cont">
-                                <input type="radio" checked>
+                                <input type="radio" checked />
                                 <p>По телефону</p>
                             </div>
                             <div class="calculator__form__check__cont">
-                                <input type="radio">
+                                <input type="radio" />
                                 <p>SMS</p>
                             </div>
                             <div class="calculator__form__check__cont">
-                                <input type="radio">
+                                <input type="radio" />
                                 <p>Viber</p>
                             </div>
                             <div class="calculator__form__check__cont">
-                                <input type="radio">
+                                <input type="radio" />
                                 <p>Whatsapp</p>
                             </div>
-                    
                         </div>
-                        <input type="hidden" value="По телефону" name="" id="cForm-hidden">
-                        <input required class="calculator__form__data" type="text" placeholder="Ваше имя">
-                        <input required class="calculator__form__data" type="text" placeholder="Ваш номер телефона">
+                        <input
+                            type="hidden"
+                            value="По телефону"
+                            name=""
+                            id="cForm-hidden"
+                        />
+                        <input
+                            required
+                            class="calculator__form__data"
+                            type="text"
+                            placeholder="Ваше имя"
+                        />
+                        <input
+                            required
+                            class="calculator__form__data"
+                            type="text"
+                            placeholder="Ваш номер телефона"
+                        />
                         <div class="calculator__form__discount">
-                            <input type="radio" checked>
+                            <input type="radio" checked />
                             Получить скидку на обивочный материал
                         </div>
                         <button class="calculator__form__submit" type="submit">
-                            <img src="./assets/img/check2-circle.svg" alt="">
+                            <img src="./assets/img/check2-circle.svg" alt="" />
                             Готово
                         </button>
                     </form>
                 </div>
             </div>
-            
-            <button class="calculator__next">Далее &#8594;</button>
-        </div>
             <div class="wrapper main__wrapper">
                 <section class="title" id="title">
                     <div class="fur-bef"></div>
@@ -302,8 +412,10 @@
                     </div>
                     <div class="title__func">
                         <h1 class="title__func__title">
-                            Закажите замер прямо сейчас и получите<span> скидку 40%</span> на
-                            обновочный материал
+                            Закажите замер прямо сейчас и получите<span>
+                                скидку 40%</span
+                            >
+                            на обновочный материал
                         </h1>
                         <div class="title__func__cont">
                             <form class="title__func__block">
@@ -499,7 +611,7 @@
                                             <span>&#9679;</span> Выполним
                                             перетяжку любой мягкой мебели
                                         </p>
-                                        
+
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> Любые виды
@@ -512,68 +624,91 @@
                                                 <span>&#9675;</span> Кровати
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> Кухонные и спальные мягкие гарнитуры
+                                                <span>&#9675;</span> Кухонные и
+                                                спальные мягкие гарнитуры
                                             </p>
-                                            <p class="service__item__list__main">
+                                            <p
+                                                class="service__item__list__main"
+                                            >
                                                 <span>&#9675;</span> Офисная:
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> офисные диваны
+                                                <span>&#9675;</span> офисные
+                                                диваны
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> офисные кресла и стулья
+                                                <span>&#9675;</span> офисные
+                                                кресла и стулья
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span>компьютерные кресла и др.
+                                                <span>&#9675;</span>компьютерные
+                                                кресла и др.
                                             </p>
-                                            <p class="service__item__list__main">
-                                                <span>&#9675;</span> Специализированная:
+                                            <p
+                                                class="service__item__list__main"
+                                            >
+                                                <span>&#9675;</span>
+                                                Специализированная:
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> кушетки
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> парикмахерские кресла
+                                                <span>&#9675;</span>
+                                                парикмахерские кресла
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> кресла для маникюра
+                                                <span>&#9675;</span> кресла для
+                                                маникюра
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> массажные кресла и кушетки
+                                                <span>&#9675;</span> массажные
+                                                кресла и кушетки
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> кресла, диваны и стулья для баров, ресторанов, кафе, гостиниц
+                                                <span>&#9675;</span> кресла,
+                                                диваны и стулья для баров,
+                                                ресторанов, кафе, гостиниц
                                             </p>
                                         </div>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Комплексная перетяжка, включая все необходимые работы:
+                                            <span>&#9679;</span> Комплексная
+                                            перетяжка, включая все необходимые
+                                            работы:
                                         </p>
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена обивки
+                                                <span>&#9675;</span> замена
+                                                обивки
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена наполнителя
+                                                <span>&#9675;</span> замена
+                                                наполнителя
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена механизмов и фурнитуры 
+                                                <span>&#9675;</span> замена
+                                                механизмов и фурнитуры
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена внутренних чехлов 
+                                                <span>&#9675;</span> замена
+                                                внутренних чехлов
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена подкладочного материала 
+                                                <span>&#9675;</span> замена
+                                                подкладочного материала
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> ремонт и реставрация 
+                                                <span>&#9675;</span> ремонт и
+                                                реставрация
                                             </p>
-
                                         </div>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Большой выбор тканей для перетяжки 
+                                            <span>&#9679;</span> Большой выбор
+                                            тканей для перетяжки
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Перетяжка всей мебели или отдельных ее частей 
+                                            <span>&#9679;</span> Перетяжка всей
+                                            мебели или отдельных ее частей
                                         </p>
                                         <p
                                             class="close__service__item__list"
@@ -615,16 +750,18 @@
                                 <div class="service__item__list">
                                     <div class="service__item__list__container">
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Удаление сколов и царапин 
+                                            <span>&#9679;</span> Удаление сколов
+                                            и царапин
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Обновление лакокрасочного покрытия:
+                                            <span>&#9679;</span> Обновление
+                                            лакокрасочного покрытия:
                                         </p>
-                                        
-                                        
+
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> удаление старой краски и лака
+                                                <span>&#9675;</span> удаление
+                                                старой краски и лака
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> шпатлевка
@@ -635,39 +772,47 @@
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> покраска
                                             </p>
-                                            
+
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> лакировка
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> роспись деревянных элементов
+                                                <span>&#9675;</span> роспись
+                                                деревянных элементов
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена и ремонт старой фурнитуры (петель, ручек, других креплений)
+                                                <span>&#9675;</span> замена и
+                                                ремонт старой фурнитуры (петель,
+                                                ручек, других креплений)
                                             </p>
-                                            
                                         </div>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Перетяжка старой обивки 
+                                            <span>&#9679;</span> Перетяжка
+                                            старой обивки
                                         </p>
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> полная и частичная перетяжка диванов и кресел 
+                                                <span>&#9675;</span> полная и
+                                                частичная перетяжка диванов и
+                                                кресел
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> полный и частичный ремонт диванов и кресел
+                                                <span>&#9675;</span> полный и
+                                                частичный ремонт диванов и
+                                                кресел
                                             </p>
-                                           
-
                                         </div>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Демонтаж и разбор мебели для выполнения работ по реставрации
+                                            <span>&#9679;</span> Демонтаж и
+                                            разбор мебели для выполнения работ
+                                            по реставрации
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Сборка  
+                                            <span>&#9679;</span> Сборка
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Вывоз и доставка мебели для выполнения работ  
+                                            <span>&#9679;</span> Вывоз и
+                                            доставка мебели для выполнения работ
                                         </p>
                                         <p
                                             class="close__service__item__list"
@@ -711,80 +856,102 @@
                                 <div class="service__item__list">
                                     <div class="service__item__list__container">
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт любой обивки
+                                            <span>&#9679;</span> Ремонт любой
+                                            обивки
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт любой сложности 
+                                            <span>&#9679;</span> Ремонт любой
+                                            сложности
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Полный и частичный ремонт мягкой мебели
+                                            <span>&#9679;</span> Полный и
+                                            частичный ремонт мягкой мебели
                                         </p>
-                                        
+
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт отдельных частей 
+                                            <span>&#9679;</span> Ремонт
+                                            отдельных частей
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт в нашей мастерской
+                                            <span>&#9679;</span> Ремонт в нашей
+                                            мастерской
                                         </p>
                                         <p class="service__item__list__main">
                                             <span>&#9679;</span> Ремонт на дому
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Мы выполним любые работы по ремонту:
+                                            <span>&#9679;</span> Мы выполним
+                                            любые работы по ремонту:
                                         </p>
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> перетяжку старой обивки 
+                                                <span>&#9675;</span> перетяжку
+                                                старой обивки
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> удаление сколов и царапин 
+                                                <span>&#9675;</span> удаление
+                                                сколов и царапин
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> обновление лакокрасочного покрытия
+                                                <span>&#9675;</span> обновление
+                                                лакокрасочного покрытия
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена подкладочного материала 
+                                                <span>&#9675;</span> замена
+                                                подкладочного материала
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена наполнителя
+                                                <span>&#9675;</span> замена
+                                                наполнителя
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> ремонт механизмов (пружины, ролики, заглушки,  соединители, заглушки, газлифты, защитные короба и др)
+                                                <span>&#9675;</span> ремонт
+                                                механизмов (пружины, ролики,
+                                                заглушки, соединители, заглушки,
+                                                газлифты, защитные короба и др)
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена подкладочного материала 
+                                                <span>&#9675;</span> замена
+                                                подкладочного материала
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> замена наполнителей и др. 
+                                                <span>&#9675;</span> замена
+                                                наполнителей и др.
                                             </p>
-
                                         </div>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонтные работы выполняют опытные мастера 
+                                            <span>&#9679;</span> Ремонтные
+                                            работы выполняют опытные мастера
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Наши мастера предложат Вам на выбор:
+                                            <span>&#9679;</span> Наши мастера
+                                            предложат Вам на выбор:
                                         </p>
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> варианты ремонта и реставрации 
+                                                <span>&#9675;</span> варианты
+                                                ремонта и реставрации
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> любые виды тканей 
+                                                <span>&#9675;</span> любые виды
+                                                тканей
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> варианты дизайна обивки
+                                                <span>&#9675;</span> варианты
+                                                дизайна обивки
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> выполнение демонтажа и разборка мебели
+                                                <span>&#9675;</span> выполнение
+                                                демонтажа и разборка мебели
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> вывоз и доставку 
+                                                <span>&#9675;</span> вывоз и
+                                                доставку
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> сборку мебели на дому
+                                                <span>&#9675;</span> сборку
+                                                мебели на дому
                                             </p>
-
                                         </div>
                                         <p
                                             class="close__service__item__list"
@@ -828,22 +995,27 @@
                                 <div class="service__item__list">
                                     <div class="service__item__list__container">
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Замена любой обивки 
+                                            <span>&#9679;</span> Замена любой
+                                            обивки
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Изменение дизайна мебели
+                                            <span>&#9679;</span> Изменение
+                                            дизайна мебели
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Изменение цвета мебели
+                                            <span>&#9679;</span> Изменение цвета
+                                            мебели
                                         </p>
-                                        
+
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Обивка качественными современными тканями:
+                                            <span>&#9679;</span> Обивка
+                                            качественными современными тканями:
                                         </p>
-                                        
+
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> натуральная кожа
+                                                <span>&#9675;</span> натуральная
+                                                кожа
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span>велюр
@@ -855,7 +1027,8 @@
                                                 <span>&#9675;</span> нубук
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> искусственная кожа
+                                                <span>&#9675;</span>
+                                                искусственная кожа
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> флок
@@ -867,11 +1040,11 @@
                                                 <span>&#9675;</span> шенилл
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> рогожка и др. 
+                                                <span>&#9675;</span> рогожка и
+                                                др.
                                             </p>
-
                                         </div>
-                                        
+
                                         <p
                                             class="close__service__item__list"
                                             id="closeServiceList"
@@ -914,32 +1087,41 @@
                                 <div class="service__item__list">
                                     <div class="service__item__list__container">
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Частичная замена наполнителя  
+                                            <span>&#9679;</span> Частичная
+                                            замена наполнителя
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Полная замена наполнителя 
+                                            <span>&#9679;</span> Полная замена
+                                            наполнителя
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Замена наполнителей любого вида
+                                            <span>&#9679;</span> Замена
+                                            наполнителей любого вида
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> пружинные наполнители
+                                            <span>&#9675;</span> пружинные
+                                            наполнители
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> наполнители из пенополиуретана
+                                            <span>&#9675;</span> наполнители из
+                                            пенополиуретана
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> синтетические наполнители 
+                                            <span>&#9675;</span> синтетические
+                                            наполнители
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> природные наполнители
+                                            <span>&#9675;</span> природные
+                                            наполнители
                                         </p>
-                                        
+
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Большой выбор материала для наполнителей:
+                                            <span>&#9679;</span> Большой выбор
+                                            материала для наполнителей:
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> натуральный латекс
+                                            <span>&#9675;</span> натуральный
+                                            латекс
                                         </p>
                                         <p class="service__item__list__sec">
                                             <span>&#9675;</span> полиуретан
@@ -960,22 +1142,25 @@
                                             <span>&#9675;</span> комфорель
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> дюрафил 
+                                            <span>&#9675;</span> дюрафил
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> кокосовый очес и др. 
+                                            <span>&#9675;</span> кокосовый очес
+                                            и др.
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span>Замена внутренних чехлов(велютина) 
+                                            <span>&#9679;</span>Замена
+                                            внутренних чехлов(велютина)
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Замена подкладочного материала
+                                            <span>&#9679;</span> Замена
+                                            подкладочного материала
                                         </p>
 
-                                        
                                         <div class="service__item__list__tab">
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> натуральная кожа
+                                                <span>&#9675;</span> натуральная
+                                                кожа
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span>велюр
@@ -987,7 +1172,8 @@
                                                 <span>&#9675;</span> нубук
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> искусственная кожа
+                                                <span>&#9675;</span>
+                                                искусственная кожа
                                             </p>
                                             <p class="service__item__list__sec">
                                                 <span>&#9675;</span> флок
@@ -999,11 +1185,11 @@
                                                 <span>&#9675;</span> шенилл
                                             </p>
                                             <p class="service__item__list__sec">
-                                                <span>&#9675;</span> рогожка и др. 
+                                                <span>&#9675;</span> рогожка и
+                                                др.
                                             </p>
-
                                         </div>
-                                        
+
                                         <p
                                             class="close__service__item__list"
                                             id="closeServiceList"
@@ -1046,38 +1232,48 @@
                                 <div class="service__item__list">
                                     <div class="service__item__list__container">
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт и реставрация отдельных элементов 
+                                            <span>&#9679;</span> Ремонт и
+                                            реставрация отдельных элементов
                                         </p>
                                         <p class="service__item__list__main">
                                             <span>&#9679;</span> Пошив подушек
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Перетяжка подушек и матрацев для кресел
+                                            <span>&#9679;</span> Перетяжка
+                                            подушек и матрацев для кресел
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9675;</span>Перетяжка подлокотников и спинки диванов
+                                            <span>&#9675;</span>Перетяжка
+                                            подлокотников и спинки диванов
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9675;</span> Перетяжка подушек и матрацев для диванов
+                                            <span>&#9675;</span> Перетяжка
+                                            подушек и матрацев для диванов
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9675;</span> Перетяжка подлокотников и спинки кресел
+                                            <span>&#9675;</span> Перетяжка
+                                            подлокотников и спинки кресел
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9675;</span> Перетяжка изголовья кроватей
+                                            <span>&#9675;</span> Перетяжка
+                                            изголовья кроватей
                                         </p>
-                                        
+
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Ремонт механизмов дивана
-                                        </p>
-                                        <p class="service__item__list__main">
-                                            <span>&#9675;</span>Ремонт механизмов кресла
-                                        </p>
-                                        <p class="service__item__list__main">
-                                            <span>&#9675;</span> Ремонт механизмов кровати
+                                            <span>&#9679;</span> Ремонт
+                                            механизмов дивана
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9675;</span> Ремонт и замена фурнитуры:
+                                            <span>&#9675;</span>Ремонт
+                                            механизмов кресла
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Ремонт
+                                            механизмов кровати
+                                        </p>
+                                        <p class="service__item__list__main">
+                                            <span>&#9675;</span> Ремонт и замена
+                                            фурнитуры:
                                         </p>
                                         <p class="service__item__list__sec">
                                             <span>&#9675;</span> ножки
@@ -1092,10 +1288,10 @@
                                             <span>&#9675;</span> ролики
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> соединители 
+                                            <span>&#9675;</span> соединители
                                         </p>
                                         <p class="service__item__list__sec">
-                                            <span>&#9675;</span> латодержатели  
+                                            <span>&#9675;</span> латодержатели
                                         </p>
                                         <p class="service__item__list__sec">
                                             <span>&#9675;</span> защитные короба
@@ -1104,11 +1300,13 @@
                                             <span>&#9675;</span> заглушки и др.
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span>Замена подкладочного материала
+                                            <span>&#9679;</span>Замена
+                                            подкладочного материала
                                         </p>
                                         <p class="service__item__list__main">
-                                            <span>&#9679;</span> Замена наполнителя
-                                        </p>                        
+                                            <span>&#9679;</span> Замена
+                                            наполнителя
+                                        </p>
                                         <p
                                             class="close__service__item__list"
                                             id="closeServiceList"
@@ -1121,44 +1319,853 @@
                         </div>
                     </div>
                 </section>
-                
-                <section class="now" id="Now">
+                <!-- Card -->
+
+                <section class="now">
                     <div class="container">
                         <div class="now__block">
                             <div class="now__card">
                                 <h3>Рассчитаем цену прямо сейчас!</h3>
-                                <p>напишите нам в любой удобный для Вас месседжер</p>
+                                <p>
+                                    напишите нам в любой удобный для Вас
+                                    месседжер
+                                </p>
                                 <a class="now__button__whatsapp" href="#">
                                     <button>Написать в Whatsapp</button>
-                                    <img src="./assets/img/whatsapp.svg" alt="">
+                                    <img
+                                        src="./assets/img/whatsapp.svg"
+                                        alt=""
+                                    />
                                 </a>
                                 <a class="now__button__telegramm" href="#">
                                     <button>Написать в Telegramm</button>
-                                    <img src="./assets/img/telegram.svg" alt="">
+                                    <img
+                                        src="./assets/img/telegram.svg"
+                                        alt=""
+                                    />
                                 </a>
-                                <p>или введите свой номер телефона, и мы перезвоним вам в течении 10 минут</p>
+                                <p>
+                                    или введите свой номер телефона, и мы
+                                    перезвоним вам в течении 10 минут
+                                </p>
                                 <form class="now__card__form" action="#">
-                                    <input placeholder="Ваше имя" required type="text" />
+                                    <input
+                                        placeholder="Ваше имя"
+                                        required
+                                        type="text"
+                                    />
                                     <input
                                         placeholder="+7 (___) ___-__-__"
                                         type="text"
                                         required
                                     />
-                                    <button class="now__form__button" type="submit">Рассчитать цену</button>
+                                    <button
+                                        class="now__form__button"
+                                        type="submit"
+                                    >
+                                        Рассчитать цену
+                                    </button>
                                 </form>
                             </div>
-                            <img class="now__image" src="./assets/img/Beg/5. Расчитаем цену/фото дивана РАССЧИТАЕМ ЦЕНУ.jpg" alt="">
+                            <img
+                                class="now__image"
+                                src="./assets/img/Beg/5. Расчитаем цену/фото дивана РАССЧИТАЕМ ЦЕНУ.jpg"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </section>
+                <section class="steps">
+                    <div class="container">
+                        <h2 class="all-title">Этапы работ по перетяжке</h2>
+                        <div class="step__list">
+                            <div class="step__item">
+                                <h4>1</h4>
+                                <div class="step__img__container">
+                                    <img
+                                        src="./assets/img/Beg/6. Этапы работ/картинка этапы 1.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h5>Вызов мастера и оценка стоимости</h5>
+                                <p>
+                                    Мастер покажет Вам каталог материалов и с
+                                    учетом выбранной ткани и объёма работ Вам
+                                    назовут цену услуги
+                                </p>
+                            </div>
+                            <div class="step__item">
+                                <h4>2</h4>
+                                <div class="step__img__container">
+                                    <img
+                                        src="./assets/img/Beg/6. Этапы работ/картинка этапы 2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h5>Заключение договора</h5>
+                                <p>
+                                    Вы подпишите с нами <a href="#">договор</a>,
+                                    в котором четко прописываются все условия
+                                    оказания услуги
+                                </p>
+                            </div>
+                            <div class="step__item">
+                                <h4>3</h4>
+                                <div class="step__img__container">
+                                    <img
+                                        src="./assets/img/Beg/6. Этапы работ/картинка этапы 3.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h5>Выполнение работ</h5>
+                                <p>
+                                    С учетом выполняемых работ, перетяжка
+                                    выполняется на дому или в мастерской
+                                </p>
+                            </div>
+                            <div class="step__item">
+                                <h4>4</h4>
+                                <div class="step__img__container">
+                                    <img
+                                        src="./assets/img/Beg/6. Этапы работ/картинка этапы 4.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h5>Доставка и сборка мебели</h5>
+                                <p>
+                                    При необходимости мы берём на себя доставку
+                                    и сборку мебели по вашему адресу
+                                </p>
+                            </div>
+                        </div>
+                        <p class="step__undertext">
+                            Предоставьте нашим мастерам все вопросы по
+                            логистике, монтажу, демонтажу и сборке вашей мебели.
+                            Наш мастер проконсультирует, поможет выбрать
+                            материал и ответит на все вопросы
+                        </p>
+                        <div class="step__foot">
+                            <button>Рассчитать цену</button>
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="add">
+                    <div class="container add__container">
+                        <h2 class="all-title add-title">
+                            Закажите бесплатный замер и узнайте точную стоимость
+                            услг
+                        </h2>
+                        <form class="add__func__block">
+                            <input placeholder="Ваше имя" type="text" />
+                            <input
+                                placeholder="+7 (___) ___-__-__"
+                                type="text"
+                            />
+                            <button type="submit">
+                                Заказать бесплатный замер
+                            </button>
+                        </form>
+                        <div class="add__func__check">
+                            <input type="checkbox" checked />
+                            <p>
+                                Нажимая на кнопку "Заказать бесплатный замер",
+                                Вы соглашаетесь на
+                                <a href="#">обработку персональных данных</a>
+                                в соответствии с ФЗ "О персональных данных"
+                                №152-ФЗ от 27.07.2006
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="examples">
+                    <div class="container">
+                        <h2 class="all-title">Примеры работ</h2>
+                        <div class="ex__list">
+                            <div class="ex__item">
+                                <div class="ex__item__img">
+                                    <img
+                                        class="ex__item__after"
+                                        src="./assets/img/1.2. Подлокотник дивана ПОСЛЕ.jpeg"
+                                        alt=""
+                                    />
+
+                                    <img
+                                        class="ex__item__before"
+                                        src="./assets/img/1.1. Подлокотник дивана ДО.jpeg"
+                                        alt=""
+                                    />
+                                    <div class="ex__item__img__mask">
+                                        <div class="ex__item__mask__container">
+                                            <img
+                                                src="./assets/img/hand-index-thumb.svg"
+                                                alt=""
+                                            />
+                                            <p>Наведите курсор</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ex__item__disc">
+                                    <h4>Описание</h4>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/price.svg"
+                                            alt=""
+                                        />
+                                        <p>Стоимость работ:</p>
+                                        <span>7 500 рублей</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/check2-circle-copy.svg"
+                                            alt=""
+                                        />
+                                        <p>Описание:</p>
+                                        <span
+                                            >Перетяжка подлокотников
+                                            дивана</span
+                                        >
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/material.svg"
+                                            alt=""
+                                        />
+                                        <p>Материал:</p>
+                                        <span>Велюр</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/clock.svg"
+                                            alt=""
+                                        />
+                                        <p>Срок работ:</p>
+                                        <span>5 дней</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/calendar.svg"
+                                            alt=""
+                                        />
+                                        <p>Дата:</p>
+                                        <span>Апрель, 2021</span>
+                                    </div>
+                                    <button class="ex__item__form">
+                                        Заказать услугу
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ex__item">
+                                <div class="ex__item__img">
+                                    <img
+                                        class="ex__item__after"
+                                        src="./assets/img/2.2. банкетка ПОСЛЕ.jpg"
+                                        alt=""
+                                    />
+
+                                    <img
+                                        class="ex__item__before"
+                                        src="./assets/img/2.1. банкетка ДО.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ex__item__disc">
+                                    <h4>Описание</h4>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/price.svg"
+                                            alt=""
+                                        />
+                                        <p>Стоимость работ:</p>
+                                        <span> 16 000 рублей </span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/check2-circle-copy.svg"
+                                            alt=""
+                                        />
+                                        <p>Описание:</p>
+                                        <span>Реставрация банкетки</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/material.svg"
+                                            alt=""
+                                        />
+                                        <p>Материал:</p>
+                                        <span>Жаккард</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/clock.svg"
+                                            alt=""
+                                        />
+                                        <p>Срок работ:</p>
+                                        <span>12 дней</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/calendar.svg"
+                                            alt=""
+                                        />
+                                        <p>Дата:</p>
+                                        <span>Декабрь, 2022</span>
+                                    </div>
+                                    <button class="ex__item__form">
+                                        Заказать услугу
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ex__item">
+                                <div class="ex__item__img">
+                                    <img
+                                        class="ex__item__after"
+                                        src="./assets/img/6.2. Угловой диван после 2.jpg"
+                                        alt=""
+                                    />
+
+                                    <img
+                                        class="ex__item__before"
+                                        src="./assets/img/6.1. Угловой диван ДО 2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ex__item__disc">
+                                    <h4>Описание</h4>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/price.svg"
+                                            alt=""
+                                        />
+                                        <p>Стоимость работ:</p>
+                                        <span>26 000 рублей</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/check2-circle-copy.svg"
+                                            alt=""
+                                        />
+                                        <p>Описание:</p>
+                                        <span>Перетяжка углового дивана</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/material.svg"
+                                            alt=""
+                                        />
+                                        <p>Материал:</p>
+                                        <span>Велюр</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/clock.svg"
+                                            alt=""
+                                        />
+                                        <p>Срок работ:</p>
+                                        <span>16 дней</span>
+                                    </div>
+                                    <div class="ex__item__disc__point">
+                                        <img
+                                            src="./assets/img/calendar.svg"
+                                            alt=""
+                                        />
+                                        <p>Дата:</p>
+                                        <span>Ноябрь, 2023</span>
+                                    </div>
+                                    <button class="ex__item__form">
+                                        Заказать услугу
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="material">
+                    <div class="container">
+                        <h2 class="all-title">Ткани</h2>
+                        <div class="material__list">
+                            <div class="material__item">
+                                <img src="./assets/img/велюр 1.svg" alt="" />
+                                <h5>Велюр</h5>
+                            </div>
+                            <div class="material__item">
+                                <img src="./assets/img/Жаккард 1.svg " alt="" />
+                                <h5>Жаккард</h5>
+                            </div>
+                            <div class="material__item">
+                                <img src="./assets/img/ЗАМША 1.svg " alt="" />
+                                <h5>Замша</h5>
+                            </div>
+                            <div class="material__item">
+                                <img
+                                    src="./assets/img/ИСКУССТВЕННАЯ КОЖА 1.svg "
+                                    alt=""
+                                />
+                                <h5>Искусственная кожа</h5>
+                            </div>
+                            <div class="material__item">
+                                <img
+                                    src="./assets/img/НАТУРАЛЬНАЯ КОЖА 1.svg "
+                                    alt=""
+                                />
+                                <h5>Натуральная кожа</h5>
+                            </div>
+                            <div class="material__item">
+                                <img src="./assets/img/НУБУК 1.svg" alt="" />
+                                <h5>Нубук</h5>
+                            </div>
+                            <div class="material__item">
+                                <img src="./assets/img/ФЛОК 1.svg" alt="" />
+                                <h5>Флок</h5>
+                            </div>
+                            <div class="material__item">
+                                <img src="./assets/img/ШЕНИЛЛ 1.svg" alt="" />
+                                <h5>Шенилл</h5>
+                            </div>
+                        </div>
+                        <p class="material__undertext">
+                            Пригласите бесплатно замерщика
+                            <span>с полным каталогом тканей</span>
+                        </p>
+                        <div class="material__foot">
+                            <button>Рассчитать цену</button>
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="pricelist">
+                    <h2 class="all-title">Наши цены</h2>
+                    <div class="container pricelist__container">
+                        <p class="pricelist__title">
+                            Мы сделаем перетяжку, ремонт и реставрацию мебели по
+                            лучшей цене
+                        </p>
+                        <div class="pricelist__grid">
+                            <div class="pricelist__grid__title">
+                                <p>
+                                    Наименование работ <br />
+                                    (без учёта стоимости материала)*
+                                </p>
+                                <p>Цены*</p>
+                            </div>
+                            <div class="pricelist__grid__list">
+                                <div class="pricelist__grid__list__item">
+                                    <p>Перетяжка игрового кресла:</p>
+                                    <span>от 1500р</span>
+                                </div>
+                                <div class="pricelist__grid__list__item">
+                                    <p>Перетяжка дивана:</p>
+                                    <span>от 4000р</span>
+                                </div>
+                                <div class="pricelist__grid__list__item">
+                                    <p>Перетяжка стульев:</p>
+                                    <span>от 600р</span>
+                                </div>
+                                <div class="pricelist__grid__list__item">
+                                    <p>Перетяжка кресла:</p>
+                                    <span>от 2000р</span>
+                                </div>
+                                <div class="pricelist__grid__list__item">
+                                    <p>Перетяжка офисного кресла:</p>
+                                    <span>от 2000р</span>
+                                </div>
+
+                                <div class="pricelist__grid__hide">
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Замена пружинного блока дивана:</p>
+                                        <span>от 1500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>
+                                            Перетяжка кухонного углового дивана:
+                                        </p>
+                                        <span>от 3500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка кресла:</p>
+                                        <span>от 2000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка изголовья кровати:</p>
+                                        <span>от 3000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка углового дивана:</p>
+                                        <span>от 6000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка спинки кровати:</p>
+                                        <span>от 2500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка подлокотников кровати:</p>
+                                        <span>от 1000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка кожанного дивана:</p>
+                                        <span>от 7000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>
+                                            Перетяжка игрового компьютерного
+                                            кресла:
+                                        </p>
+                                        <span>от 2500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка кресла руководителя:</p>
+                                        <span>от 2500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка барного стула:</p>
+                                        <span>от 700р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка входной двери:</p>
+                                        <span>от 6000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Пожаного кресла:</p>
+                                        <span>от 7000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка офисного кресла:</p>
+                                        <span>от 2000р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка советского кресла:</p>
+                                        <span>от 1500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка маникюрного кресла:</p>
+                                        <span>от 2500р</span>
+                                    </div>
+                                    <div class="pricelist__grid__list__item">
+                                        <p>Перетяжка парикмахерского кресла:</p>
+                                        <span>от 1500р</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="pricelist__button">
+                                <img
+                                    src="./assets/img/arrow-down-square.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                        <h4 class="pricelist__undertext">
+                            *конечная стоимость определяется в зависимости
+                            габаритов мебели, выбранной ткани, сложности работ,
+                            места их выполнения, здесь приведена примерная
+                            стоимость
+                        </h4>
+                        <h3 class="pricelist__help">
+                            Если вы не смогли найти нужную позицию, позвоните
+                            нам, мы поможем узнать цену
+                        </h3>
+                        <div class="material__foot">
+                            <button>Рассчитать цену</button>
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="howwork">
+                    <div class="container">
+                        <h2 class="all-title">О нас</h2>
+                        <p class="howwork__title">
+                            Вот уже 10 лет мы на рынке и нам доверились сотни
+                            клиентов. Мы используем два варианта работы:
+                        </p>
+                        <div class="howwork__list">
+                            <div class="howwork__item">
+                                <div class="howwork__item__disc">
+                                    <h5>В мастерской</h5>
+                                    <p>
+                                        Мы выезжаешь за вашей мебелью, и
+                                        качественно выпонляем даже сложнейшие
+                                        задачи
+                                    </p>
+
+                                    <button class="howwork__button">
+                                        Заказать звонок
+                                    </button>
+                                </div>
+                                <div class="howwork__item__image">
+                                    <img
+                                        src="./assets/img/Beg/10. О нас/в мастерской.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="howwork__item">
+                                <div class="howwork__item__image">
+                                    <img
+                                        src="./assets/img/Beg/10. О нас/на дому.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="howwork__item__disc">
+                                    <h5>На дому</h5>
+                                    <p>
+                                        Наш мастер приезжает к вам, проводит
+                                        оценку работы, после чего оперативно
+                                        устраняет проблему
+                                    </p>
+
+                                    <button class="howwork__button">
+                                        Заказать звонок
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="container reviews__container">
+                        <h2 class="all-title">Отзывы</h2>
+                        
+                        <div class="reviews__list">
+                            
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Владимир И.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Владимир И.</h5>
+                                    <p>
+                                        После празднования дня рождения был
+                                        испорчен дорогой комплект мебели.
+                                        Обратился в компанию «Обивка в дом».
+                                        Приехал мастер с образцами тканей, все
+                                        объяснил, показал, сошлись по цене,
+                                        отдал в работу.  Перетянули весь
+                                        комплект, сделали и доставили все в
+                                        срок. Результатом доволен
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Татьяна Левина.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Татьяна Левина.</h5>
+                                    <p>
+                                        Ребята из компании «Обивка в дом» перетягивали 
+мне  двухместный диван с каретной стяжкой. Также 
+отреставрировали ножки дивана. Получилось очень 
+красиво! Спасибо за проделанную работу!
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Юлия Короткова.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Юлия Короткова</h5>
+                                    <p>
+                                        Мастер компании Обивка в дом предложили дизайн 
+и мой старенький диванчик превратился в прекрасный 
+диван с современным дизайном. Сделали все быстро, 
+качественно и по очень справедливой цене.  
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Мельников Тимур.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Мельников Тимур</h5>
+                                    <p>
+                                        Позвонил в Обивку в дом по поводу перетяжки 
+углового дивана... Все сделали четко, за хорошую 
+стоимость. Уложились раньше срока. 
+Отличная работа!!!
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Ольга Р.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Ольга Р.</h5>
+                                    <p>
+                                        Много лет назад под заказ покупала круглую кровать. 
+Она сильно износилась. Покупка новой оказалась очень 
+дорогой. Обратилась в компанию «Обивка в дом» 
+узнать возможен ли ремонт. Приехал замерщик, 
+все объяснил, показал ткани. Цена оказалась на 
+удивление приятной. После ремонта 
+кровать как новая. Очень довольна, 
+спасибо за работу!
+
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <img
+                                    src="./assets/img/Beg/11. Отзывы/Дмитрий Иванов.jpg"
+                                    alt=""
+                                />
+                                <div class="reviews__item__desc">
+                                    <h5>Дмитрий Иванов</h5>
+                                    <p>
+                                        Перетягивал и ремонтировал угловой диван в данной компании. Сделали качественную сборку и перетяжку. Заменили механизмы, все работает исправно.  Работа хорошая.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="allserv">
+                    <div class="container allserv__container">
+                        <h2 class="all-title">Весь перечень услуг</h2>
+                        <div class="allserv__list">
+                            <div class="allserv__row">
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="allserv__row">
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="allserv__row">
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                <div class="allserv__item">
+                                    <p>Обивка мебели
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="material__foot">
+                            <button>Рассчитать цену</button>
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact">
+                    <div class="container">
+
+                    </div>
+                </section>
             </div>
-            <br><br><br><br><br><br><br><br><br><br>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </main>
         <script src="./assets/js/lib/jquery-3.6.3.min.js"></script>
+        <script src="./assets/js/lib/slick.min.js"></script>
 
-        <script src="./assets/js/now.js"></script>
         <script src="./assets/js/more-serv.js"></script>
         <script src="./assets/js/scroll.js"></script>
+        <script src="./assets/js/example.js"></script>
+        <script src="./assets/js/pricelist.js"></script>
+
+        <script src="./assets/js/phone.js"></script>
+        <script src="./assets/js/reviews.js"></script>
         <script src="./assets/js/calculator.js"></script>
         <script src="./assets/js/scripts.js"></script>
     </body>
