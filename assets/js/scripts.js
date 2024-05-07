@@ -21,7 +21,7 @@ document.addEventListener("mousemove", function(event) {
 
     // Обновляем clip-path для fur-after, чтобы она не выходила за пределы линии
     const furAfter = document.querySelector('.fur-after');
-    furAfter.style.clipPath = `inset(0 0 0 calc(${percentX}% + 2px))`; // Обновляем значение clip-path, учитывая новую позицию линии
+    furAfter.style.clipPath = `inset(0 0 0 calc(${percentX}%))`; // Обновляем значение clip-path, учитывая новую позицию линии
   }
 });
 

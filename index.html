@@ -50,7 +50,7 @@
                 </div>
                 <div class="header__foot">
                     <ul class="header__foot__list">
-                        <li><a href="">Главная</a></li>
+                        <li class="active"><a href="">Главная</a></li>
                         <li><a href="">Услуги</a></li>
                         <li><a href="">Виды мебели</a></li>
                         <li><a href="">Примеры работ</a></li>
@@ -68,38 +68,202 @@
         <div class="calculator" id="calc">
             <img src="./assets/img/calculator.svg" alt="">
         </div>
+        <div class="phone" id="phone">
+            <img src="./assets/img/telephone.svg" alt="">
+        </div>
         <div class="calculator__menu">
             <div class="calculator__title">
                 <h4>Калькулятор</h4>
                 <div class="calculator__steps">
-                    <div class="calculator__step active">
+                    <div class="calculator__step s1 active">
                         <h5>Шаг 1</h5>
                         <p>Тип мебели</p>
                     </div>
-                    <div class="calculator__step">
+                    <div class="calculator__step s2">
                         <h5>Шаг 2</h5>
                         <p>Размер мебели</p>
                     </div>
-                    <div class="calculator__step">
+                    <div class="calculator__step s3">
                         <h5>Шаг 3</h5>
                         <p>Тип ткани</p>
                     </div>
-                    <div class="calculator__step">
+                    <div class="calculator__step s4">
                         <h5>Шаг 4</h5>
                         <p>Результат</p>
                     </div>
                 </div>
             </div>
             <h3>Выберите <span id="calc-title">тип мебели</span></h3>
-            <div class="calculator__type">
-                <div class="calculator__type__item">
-                    <div class="calculator__type__item__func">
-                        <input type="radio" >
-                        <p>Диван</p>
+            <div class="calculator__container">
+                <div class="calculator__type show" id="cType">
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Диван</p>
+                        </div>
+                        <img src="./assets/img/Sofa.svg" alt="">
                     </div>
-                    <img src="./assets/img/Sofa.svg" alt="">
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Диван угловой</p>
+                        </div>
+                        <img src="./assets/img/SofaCor.svg" style="height: 33px;" alt="">
+                    </div>
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Кресло</p>
+                        </div>
+                        <img src="./assets/img/armchair.svg" alt="">
+                    </div>
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Кровать</p>
+                        </div>
+                        <img src="./assets/img/bed.svg" alt="">
+                    </div>
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Стул</p>
+                        </div>
+                        <img src="./assets/img/chair.svg" alt="">
+                    </div>
+                    <div class="calculator__type__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Другое</p>
+                        </div>
+                        <img src="./assets/img/other.svg" alt="">
+                    </div>
+                </div>
+                <div class="calculator__place" id="cPlace">
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>1-но местный</p>
+                        </div>
+                        <img src="./assets/img/p1.svg" alt="">
+                    </div>
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>2-ух местное</p>
+                        </div>
+                        <img src="./assets/img/p2.svg" style="height: 33px;" alt="">
+                    </div>
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>3-х местное</p>
+                        </div>
+                        <img src="./assets/img/p3.svg" alt="">
+                    </div>
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>4-х местное</p>
+                        </div>
+                        <img src="./assets/img/p4.svg" alt="">
+                    </div>
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Спальное место</p>
+                        </div>
+                        <img src="./assets/img/bed.svg" alt="">
+                    </div>
+                    <div class="calculator__place__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Другое</p>
+                        </div>
+                        <img src="./assets/img/other.svg" alt="">
+                    </div>
+                </div>
+                <div class="calculator__mat" id="cMat">
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Шенил</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/shenil.svg" alt="">
+                    </div>
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Рогожка</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/rogo.svg" style="height: 33px;" alt="">
+                    </div>
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Кожа</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/skin.svg" alt="">
+                    </div>
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Натуральная кожа</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/nskin.svg" alt="">
+                    </div>
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Жаккрд</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/jacard.svg" alt="">
+                    </div>
+                    <div class="calculator__mat__item">
+                        <div class="calculator__type__item__func">
+                            <input type="radio" >
+                            <p>Другое</p>
+                        </div>
+                        <img class="calc__mat__image" src="./assets/img/skinother.svg" alt="">
+                    </div>
+                </div>
+                <div class="calculator__form__container" id="cForm">
+                    <form action="#" class="calculator__form" >
+                        <div class="calculator__form__check">
+                            <div class="calculator__form__check__cont">
+                                <input type="radio" checked>
+                                <p>По телефону</p>
+                            </div>
+                            <div class="calculator__form__check__cont">
+                                <input type="radio">
+                                <p>SMS</p>
+                            </div>
+                            <div class="calculator__form__check__cont">
+                                <input type="radio">
+                                <p>Viber</p>
+                            </div>
+                            <div class="calculator__form__check__cont">
+                                <input type="radio">
+                                <p>Whatsapp</p>
+                            </div>
+                    
+                        </div>
+                        <input type="hidden" value="По телефону" name="" id="cForm-hidden">
+                        <input required class="calculator__form__data" type="text" placeholder="Ваше имя">
+                        <input required class="calculator__form__data" type="text" placeholder="Ваш номер телефона">
+                        <div class="calculator__form__discount">
+                            <input type="radio" checked>
+                            Получить скидку на обивочный материал
+                        </div>
+                        <button class="calculator__form__submit" type="submit">
+                            <img src="./assets/img/check2-circle.svg" alt="">
+                            Готово
+                        </button>
+                    </form>
                 </div>
             </div>
+            
+            <button class="calculator__next">Далее &#8594;</button>
         </div>
             <div class="wrapper main__wrapper">
                 <section class="title" id="title">
@@ -138,7 +302,7 @@
                     </div>
                     <div class="title__func">
                         <h1 class="title__func__title">
-                            Закажите замер прямо сейчас и получите скидку 40% на
+                            Закажите замер прямо сейчас и получите<span> скидку 40%</span> на
                             обновочный материал
                         </h1>
                         <div class="title__func__cont">
@@ -169,6 +333,124 @@
                     <div class="title__foot">
                         <button>Рассчитать цену</button>
                         <button>Заказать звонок</button>
+                    </div>
+                </section>
+                <section class="type">
+                    <div class="container">
+                        <h2 class="all-title">Виды мебели</h2>
+                        <div class="type__title">
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Перетяжка</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Ремонт</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Реставрация</p>
+                            </div>
+                            <div class="type__title__item">
+                                <img
+                                    src="./assets/img/star_icon_227350.svg"
+                                    alt=""
+                                />
+                                <p>Обивка</p>
+                            </div>
+                        </div>
+                        <div class="type__list">
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/диван угловой.jpg"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Диваны</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 4000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/кресло.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Кресла</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 2000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/стул.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Стулья</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 600руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/панели_двери-Photoroom.png-Photoroom.png"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Двери\панели</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 6000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img src="./assets/img/кровать.jpg" alt="" />
+                                <div class="type__item__disc">
+                                    <h2>Кровати</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 3000руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <img
+                                    src="./assets/img/офисное кресло.jpg"
+                                    alt=""
+                                />
+                                <div class="type__item__disc">
+                                    <h2>Бизнес-мебель</h2>
+                                    <p class="type__item__disc__price">
+                                        Цена: <span>от 500руб.</span>
+                                    </p>
+                                    <button class="type__item__disc__button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="service">
@@ -839,124 +1121,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="type">
-                    <div class="container">
-                        <h2 class="all-title">Виды мебели</h2>
-                        <div class="type__title">
-                            <div class="type__title__item">
-                                <img
-                                    src="./assets/img/star_icon_227350.svg"
-                                    alt=""
-                                />
-                                <p>Перетяжка</p>
-                            </div>
-                            <div class="type__title__item">
-                                <img
-                                    src="./assets/img/star_icon_227350.svg"
-                                    alt=""
-                                />
-                                <p>Ремонт</p>
-                            </div>
-                            <div class="type__title__item">
-                                <img
-                                    src="./assets/img/star_icon_227350.svg"
-                                    alt=""
-                                />
-                                <p>Реставрация</p>
-                            </div>
-                            <div class="type__title__item">
-                                <img
-                                    src="./assets/img/star_icon_227350.svg"
-                                    alt=""
-                                />
-                                <p>Обивка</p>
-                            </div>
-                        </div>
-                        <div class="type__list">
-                            <div class="type__item">
-                                <img
-                                    src="./assets/img/диван угловой.jpg"
-                                    alt=""
-                                />
-                                <div class="type__item__disc">
-                                    <h2>Диваны</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 4000руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="type__item">
-                                <img src="./assets/img/кресло.jpg" alt="" />
-                                <div class="type__item__disc">
-                                    <h2>Кресла</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 2000руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="type__item">
-                                <img src="./assets/img/стул.jpg" alt="" />
-                                <div class="type__item__disc">
-                                    <h2>Стулья</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 600руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="type__item">
-                                <img
-                                    src="./assets/img/панели_двери-Photoroom.png-Photoroom.png"
-                                    alt=""
-                                />
-                                <div class="type__item__disc">
-                                    <h2>Двери\панели</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 6000руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="type__item">
-                                <img src="./assets/img/кровать.jpg" alt="" />
-                                <div class="type__item__disc">
-                                    <h2>Кровати</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 3000руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="type__item">
-                                <img
-                                    src="./assets/img/офисное кресло.jpg"
-                                    alt=""
-                                />
-                                <div class="type__item__disc">
-                                    <h2>Бизнес-мебель</h2>
-                                    <p class="type__item__disc__price">
-                                        Цена: <span>от 500руб.</span>
-                                    </p>
-                                    <button class="type__item__disc__button">
-                                        ПОДРОБНЕЕ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
                 <section class="now" id="Now">
                     <div class="container">
                         <div class="now__block">
@@ -994,6 +1159,7 @@
         <script src="./assets/js/now.js"></script>
         <script src="./assets/js/more-serv.js"></script>
         <script src="./assets/js/scroll.js"></script>
+        <script src="./assets/js/calculator.js"></script>
         <script src="./assets/js/scripts.js"></script>
     </body>
 </html>
