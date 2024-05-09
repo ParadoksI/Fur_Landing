@@ -13,7 +13,7 @@ $(document).ready(function() {
                     arrows : false ,
                     dots : true,
                     slidesToShow: 1,
-                    centerPadding : "50px 30px 0px ",
+                    centerPadding : "00px 10px 0px ",
                 }
             },
             { 

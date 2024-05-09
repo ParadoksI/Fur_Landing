@@ -22,6 +22,12 @@
                     <div class="header__top__logo">
                         <img src="./assets/img/logo.svg" alt="logo" />
                         <p>Обивка в дом</p>
+                        <div class="header__mob" id="toggleBtn">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+
+                        </div>
                     </div>
                     <div class="header__top__disc">
                         <div class="header__top__phone">
@@ -54,16 +60,19 @@
                 </div>
                 <div class="header__foot">
                     <ul class="header__foot__list">
-                        <li class="active"><a href="">Главная</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Виды мебели</a></li>
-                        <li><a href="">Примеры работ</a></li>
-                        <li><a href="">Цены</a></li>
-                        <li><a href="">Ткани</a></li>
-                        <li><a href="">Этапы работы</a></li>
-                        <li><a href="">Калькулятор</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a class="header__item active" href="#Title" data-section="Title">Главная</a></li>
+                        <li><a class="header__item" href="#type" data-section="type">Виды мебели</a></li>
+                        <li><a class="header__item" href="#service" data-section="service">Услуги</a></li>
+                        <li><a class="header__item" href="#steps" data-section="steps">Этапы работы</a></li>
+
+                        <li><a class="header__item" href="#examples" data-section="examples">Примеры работ</a></li>
+                        <li><a class="header__item" href="#material" data-section="material">Ткани</a></li>
+
+                        <li><a class="header__item" href="#pricelist" data-section="pricelist">Цены</a></li>
+                        <li><a class="header__item" href="#howwork" data-section="howwork">О нас</a></li>
+                        <li><a class="header__item" href="#reviews" data-section="reviews">Отзывы</a></li>
+
+                        <li><a class="header__item" href="#contact" data-section="contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -376,7 +385,7 @@
                 </div>
             </div>
             <div class="wrapper main__wrapper">
-                <section class="title" id="title">
+                <section class="title" id="Title">
                     <div class="fur-bef"></div>
                     <div class="fur-after"></div>
                     <div class="divider" id="divider">
@@ -447,7 +456,7 @@
                         <button>Заказать звонок</button>
                     </div>
                 </section>
-                <section class="type">
+                <section class="type" id="type">
                     <div class="container">
                         <h2 class="all-title">Виды мебели</h2>
                         <div class="type__title">
@@ -565,7 +574,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="service">
+                <section class="service" id="service">
                     <div class="container">
                         <h2 class="all-title">Перечень услуг</h2>
                         <div class="service__list">
@@ -1321,7 +1330,7 @@
                 </section>
                 <!-- Card -->
 
-                <section class="now">
+                <section class="now" id="now">
                     <div class="container">
                         <div class="now__block">
                             <div class="now__card">
@@ -1375,7 +1384,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="steps">
+                <section class="steps" id="steps">
                     <div class="container">
                         <h2 class="all-title">Этапы работ по перетяжке</h2>
                         <div class="step__list">
@@ -1451,7 +1460,7 @@
                     </div>
                 </section>
 
-                <section class="add">
+                <section class="add" id="add">
                     <div class="container add__container">
                         <h2 class="all-title add-title">
                             Закажите бесплатный замер и узнайте точную стоимость
@@ -1479,7 +1488,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="examples">
+                <section class="examples" id="examples">
                     <div class="container">
                         <h2 class="all-title">Примеры работ</h2>
                         <div class="ex__list">
@@ -1681,7 +1690,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="material">
+                <section class="material" id="material">
                     <div class="container">
                         <h2 class="all-title">Ткани</h2>
                         <div class="material__list">
@@ -1734,7 +1743,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="pricelist">
+                <section class="pricelist" id="pricelist">
                     <h2 class="all-title">Наши цены</h2>
                     <div class="container pricelist__container">
                         <p class="pricelist__title">
@@ -1870,7 +1879,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="howwork">
+                <section class="howwork" id="howwork">
                     <div class="container">
                         <h2 class="all-title">О нас</h2>
                         <p class="howwork__title">
@@ -1921,7 +1930,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="reviews">
+                <section class="reviews" id="reviews">
                     <div class="container reviews__container">
                         <h2 class="all-title">Отзывы</h2>
                         
@@ -2032,7 +2041,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="allserv">
+                <section class="allserv" id="allserv">
                     <div class="container allserv__container">
                         <h2 class="all-title">Весь перечень услуг</h2>
                         <div class="allserv__list">
@@ -2142,15 +2151,70 @@
                                 
                             </div>
                         </div>
-                        <div class="material__foot">
+                        <div class="allserv__button">
                             <button>Рассчитать цену</button>
                             <button>Заказать звонок</button>
                         </div>
                     </div>
                 </section>
-                <section class="contact">
-                    <div class="container">
-
+                <section class="contact" id="contact">
+                    <div class="container contact__container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.3090509580798!2d37.86388509091608!3d55.944015203939415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b52ddc97302d97%3A0xbbfbff39c0b78392!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPLCAzMSwg0JrQvtGA0L7Qu9GR0LIsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MTA2OQ!5e0!3m2!1sru!2sru!4v1715260159792!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="contact__form">
+                            <h2 class="all-title">Контакты</h2>
+                            <div class="contact__item">
+                                <h5>Адрес</h5>
+                                <p>г. Королёв, ул. Советская, д. 31</p>
+                                <p>ОГРНИП: 321774600066522</p>
+                            </div>
+                            <div class="contact__item">
+                                <h5>Часы работы:</h5>
+                                <p>Пн-Вс: с 9:00 до 22:00</p>
+                            </div>
+                            <div class="contact__item">
+                                <h5>Электронная почта</h5>
+                                <p>obnovim-divan@yandex.ru</p>
+                            </div>
+                            <div class="contact__item">
+                                <h5>Телефон</h5>
+                                <p>+7 (495) 165-17-72</p>
+                            </div>
+                            <div class="contact__link">
+                                <button class="contact__link__what">
+                                    <img src="./assets/img/whatsapp.svg" alt="">
+                                </button>
+                                <button class="contact__link__telegram">
+                                    <img src="./assets/img/telegram.svg" alt="">
+                                </button>
+                            </div>
+                            <form class="contact__item__form" action="#">
+                                <h4>Остались воопросы? Мы перезвоним!</h4>
+                                
+                                <div class="contact__item__form__cont">
+                                    <input placeholder="Ваше имя" type="text" />
+                                    <input
+                                        placeholder="+7 (___) ___-__-__"
+                                        type="text"
+                                    />
+                                    <button type="submit">
+                                        Заказать бесплатный замер
+                                                                   </button>
+                                </div>
+                                <div class="contact__func__check">
+                                    <input type="checkbox" checked />
+                                    <p>
+                                        Нажимая на кнопку "Заказать бесплатный
+                                        замер", Вы соглашаетесь на
+                                        <a href="#"
+                                            >обработку персональных данных</a
+                                        >
+                                        в соответствии с ФЗ "О персональных данных"
+                                        №152-ФЗ от 27.07.2006
+                                    </p>
+                                </div>
+                                
+                            </form>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -2163,6 +2227,9 @@
         <script src="./assets/js/scroll.js"></script>
         <script src="./assets/js/example.js"></script>
         <script src="./assets/js/pricelist.js"></script>
+
+        <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/nav.js"></script>
 
         <script src="./assets/js/phone.js"></script>
         <script src="./assets/js/reviews.js"></script>
