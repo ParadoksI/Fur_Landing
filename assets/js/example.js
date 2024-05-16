@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".ex__item__form");
     var callMenu = document.querySelector(".phone__menu");
 
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function(){ 
-            callMenu.classList.add('active');
-        })
-    });
+    
 
 
 });
