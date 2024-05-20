@@ -19,6 +19,12 @@ $(document).ready(function() {
             // Если у элемента calculator__menu есть класс active, удаляем его и добавляем/удаляем классы у других элементов
             $('.phone__menu').toggleClass('active');
             $('.calculator__menu').removeClass('active');
+        } else if ( $('.other__menu').hasClass('active')) { 
+            $('.other__menu').removeClass('active');
+            $('.phone__menu').toggleClass('active');
+        } else if ($('.type__menu').hasClass('active')) { 
+            $('.type__menu').removeClass('active');
+            $('.phone__menu').toggleClass('active');
         } else {
             // Если у элемента calculator__menu нет класса active, добавляем/удаляем класс у другого элемента
             $('.phone__menu').toggleClass('active');

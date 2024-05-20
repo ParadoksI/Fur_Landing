@@ -3,7 +3,13 @@ $(document).ready(function () {
         if ($('.phone__menu').hasClass('active')) {
             $('.calculator__menu').toggleClass('active');
             $('.phone__menu').removeClass('active');
-        }
+        } else if ( $('.other__menu').hasClass('active')) { 
+            $('.other__menu').removeClass('active');
+            $('.calculator__menu').toggleClass('active');
+        } else if ($('.type__menu').hasClass('active')) { 
+            $('.type__menu').removeClass('active');
+            $('.calculator__menu').toggleClass('active');
+        } 
         else {
             $('.calculator__menu').toggleClass('active');
         }

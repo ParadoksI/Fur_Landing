@@ -58,7 +58,7 @@
                         </div>
                         <div class="header__top__func">
                             <button
-                                class="header__top__button__price make__calc"
+                                class="header__top__button__price make__phone"
                             >
                                 Узнать цену
                             </button>
@@ -413,8 +413,7 @@
                                 <div class="title__func__check">
                                     <input type="checkbox" checked />
                                     <p>
-                                        Нажимая на кнопку "Заказать бесплатный
-                                        замер", Вы соглашаетесь на
+                                        Нажимая на кнопку "Готово", Вы соглашаетесь на
                                         <a href="#"
                                             >обработку персональных данных</a
                                         >
@@ -453,8 +452,9 @@
                     <form
                         action="application.php"
                         method="post"
-                        class="calculator__form"
+                        class="calculator__form phone__form__title"
                     >
+                        <h5>Выберите удобный способ связи</h5>
                         <div class="calculator__form__check">
                             <div class="calculator__form__check__cont">
                                 <input type="radio" checked />
@@ -500,8 +500,7 @@
                         <div class="title__func__check">
                             <input type="checkbox" checked />
                             <p>
-                                Нажимая на кнопку "Заказать бесплатный
-                                замер", Вы соглашаетесь на
+                                Нажимая на кнопку "Готово", Вы соглашаетесь на
                                 <a href="#"
                                     >обработку персональных данных</a
                                 >
@@ -520,47 +519,25 @@
                 <div class="other__container">
                     <div class="closeOther">&#x2715;</div>
                     <form
-                        action="application.php"
+                        action="action.php"
                         method="post"
-                        class="calculator__form"
+                        class="calculator__form other__form"
                     >
-                        <div class="calculator__form__check">
-                            <div class="calculator__form__check__cont">
-                                <input type="radio" checked />
-                                <p>По телефону</p>
-                            </div>
-                            <div class="calculator__form__check__cont">
-                                <input type="radio" />
-                                <p>SMS</p>
-                            </div>
-                            <div class="calculator__form__check__cont">
-                                <input type="radio" />
-                                <p>Viber</p>
-                            </div>
-                            <div class="calculator__form__check__cont">
-                                <input type="radio" />
-                                <p>Whatsapp</p>
-                            </div>
-                        </div>
-                        <input
-                            type="hidden"
-                            value="По телефону"
-                            name="var"
-                            id="cForm-hidden"
-                        />
+                        <h3>Отправить заявку на звонок</h3>
+                        
                         <input
                             required
                             class="calculator__form__data"
                             type="text"
                             placeholder="Ваше имя"
-                            name="call"
+                            name="user"
                         />
                         <input
                             required
                             class="calculator__form__data"
                             type="text"
                             placeholder="Ваш номер телефона"
-                            name="number"
+                            name="phone"
                         />
                         <div class="calculator__form__discount">
                             <input type="radio" checked />
@@ -569,8 +546,7 @@
                         <div class="title__func__check">
                             <input type="checkbox" checked />
                             <p>
-                                Нажимая на кнопку "Заказать бесплатный
-                                замер", Вы соглашаетесь на
+                                Нажимая на кнопку "Готово", Вы соглашаетесь на
                                 <a href="#"
                                     >обработку персональных данных</a
                                 >
@@ -581,6 +557,104 @@
                         <button class="calculator__form__submit" type="submit">
                             <img src="./assets/img/check2-circle.svg" alt="" />
                             Готово
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="type__menu ">
+                <div class="type__menu__container">
+                    <div class="closeType">&#x2715;</div>
+                    
+                    <div class="type__item type__menu__item">
+                        <img
+                            src="./assets/img/диван угловой.jpg"
+                            alt=""
+                            class="type__menu__item__img"
+                        />
+                        <div class="type__item__disc type__item__disc1">
+                            <h2>Диваны</h2>
+                            <p class="type__item__disc__price type__item__disc__price1">
+                                Цена: <span>от 4000руб.</span>
+                            </p>
+                            
+                            
+                        </div>
+                        <div class="type__item__points">
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            <div class="type__item__point">
+                                <div class="type__menu__square"></div>
+                                <p>Прямые</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <form
+                        action="action.php"
+                        method="post"
+                        class="calculator__form type__form"
+                    >
+                        <h3>Сделать заказ</h3>
+                        
+
+                        <input
+                            required
+                            class="calculator__form__data"
+                            type="text"
+                            placeholder="Ваше имя"
+                            name="user"
+                        />
+                        <input
+                            required
+                            class="calculator__form__data"
+                            type="text"
+                            placeholder="Ваш номер телефона"
+                            name="phone"
+                        />
+                        <div class="calculator__form__discount">
+                            <input type="radio" checked />
+                            Получить скидку на обивочный материал
+                        </div>
+                        <div class="title__func__check">
+                            <input type="checkbox" checked />
+                            <p>
+                                Нажимая на кнопку "Заказать", Вы соглашаетесь на
+                                <a href="#"
+                                    >обработку персональных данных</a
+                                >
+                                в соответствии с ФЗ "О персональных данных"
+                                №152-ФЗ от 27.07.2006
+                            </p>
+                        </div>
+                        <button class="calculator__form__submit" type="submit">
+                            <img src="./assets/img/check2-circle.svg" alt="" />
+                            Заказзать
                         </button>
                     </form>
                 </div>
@@ -664,8 +738,8 @@
                         </div>
                     </div>
                     <div class="title__foot">
-                        <button class="make__phone">Рассчитать цену</button>
-                        <button class="make__phone">Заказать звонок</button>
+                        <button class="make__other">Рассчитать цену</button>
+                        <button class="make__other">Заказать звонок</button>
                     </div>
                 </section>
                 <section class="type" id="type">
@@ -713,10 +787,44 @@
                                         Цена: <span>от 4000руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Прямые</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Угловые</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Модульные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Диваны-кровати</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Раскладные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Выдвижные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Раздвижные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Бескаркасные</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="type__item">
@@ -727,10 +835,44 @@
                                         Цена: <span>от 2000руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Для дома и дачи</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Бескаркасные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Компьютерные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Кресла-качалки</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Кресла-кровати</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Маникюрные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Парикмахерские</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Специализированные кресла</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="type__item">
@@ -741,10 +883,44 @@
                                         Цена: <span>от 600руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Банкетки</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Кухонные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Стулья для кафе</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Пуфы</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Стулья для ресторанов</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Офисные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Барные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Табуреты</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="type__item">
@@ -758,10 +934,44 @@
                                         Цена: <span>от 6000руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Входные двери</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Межкомнатные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Двери шкафов</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Мягкие детали мебели</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Стеновые панели</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Панели прихожей</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Панели спальной</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Иные мебельные поверхности</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="type__item">
@@ -772,10 +982,44 @@
                                         Цена: <span>от 3000руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Односпальные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Двухспальные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Полтораспальные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Евро</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Двухярусные</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Диваны-кровати</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Раскладушки</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Кресела-кровати</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="type__item">
@@ -789,10 +1033,44 @@
                                         Цена: <span>от 500руб.</span>
                                     </p>
                                     <button
-                                        class="type__item__disc__button make__phone"
+                                        class="type__item__disc__button make__type"
                                     >
                                         ПОДРОБНЕЕ
                                     </button>
+                                </div>
+                                <div class="type__item__points" style="display: none;">
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Офисные диваны\кресла\стулья</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Компьютерные кресла</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Стулья для кафе</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Барные стулья</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Кушетки</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Специализированная мягкие мебель</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Спортинвентарь</p>
+                                    </div>
+                                    <div class="type__item__point">
+                                        <div class="type__menu__square"></div>
+                                        <p>Маникюрные кресла</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -825,7 +1103,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -979,7 +1257,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -1087,7 +1365,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -1228,7 +1506,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -1322,7 +1600,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -1469,7 +1747,7 @@
                                     />
                                 </button>
                                 <p class="service__item__under">
-                                    *выезд мастера <span>бесплатный</span>
+                                    Выезд мастера <span class="service__item__under__span">1000 &#8381;</span> <span class="service__item__under__free">бесплатно</span>
                                 </p>
                                 <button
                                     class="service__item__submit make__phone"
@@ -1698,10 +1976,10 @@
                             </div>
                         </div>
                         <p class="step__undertext">
-                            Предоставьте нашим мастерам все вопросы по
+                            Предоставьте нашим <span>мастерам</span> все вопросы по
                             логистике, монтажу, демонтажу и сборке вашей мебели.
-                            Наш мастер проконсультирует, поможет выбрать
-                            материал и ответит на все вопросы
+                            Наш мастер <span>проконсультирует</span>, <span>поможет</span> выбрать
+                            материал и <span>ответит</span> на все вопросы
                         </p>
                         <div class="step__foot">
                             <button class="make__phone">Рассчитать цену</button>
@@ -1714,7 +1992,7 @@
                     <div class="container add__container">
                         <h2 class="all-title add-title">
                             Закажите бесплатный замер и узнайте точную стоимость
-                            услг
+                            услуг
                         </h2>
                         <form
                             class="add__func__block"
@@ -1753,201 +2031,464 @@
                     <div class="container">
                         <h2 class="all-title">Примеры работ</h2>
                         <div class="ex__list">
-                            <div class="ex__item">
-                                <div class="ex__item__img">
-                                    <img
-                                        class="ex__item__after"
-                                        src="./assets/img/1.2. Подлокотник дивана ПОСЛЕ.jpeg"
-                                        alt=""
-                                    />
-
-                                    <img
-                                        class="ex__item__before"
-                                        src="./assets/img/1.1. Подлокотник дивана ДО.jpeg"
-                                        alt=""
-                                    />
-                                    <div class="ex__item__img__mask">
-                                        <div class="ex__item__mask__container">
+                            <div class="ex__list__container">
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
                                             <img
-                                                src="./assets/img/hand-index-thumb.svg"
+                                                class=""
+                                                src="./assets/img/1.2. Подлокотник дивана ПОСЛЕ.jpeg"
                                                 alt=""
                                             />
-                                            <p>Наведите курсор</p>
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/1.1. Подлокотник дивана ДО.jpeg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span>7 500 рублей</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span
+                                                >Перетяжка подлокотников
+                                                дивана</span
+                                            >
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Велюр</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>5 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Апрель, 2021</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="ex__item__disc">
-                                    <h4>Описание</h4>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/price.svg"
-                                            alt=""
-                                        />
-                                        <p>Стоимость работ:</p>
-                                        <span>7 500 рублей</span>
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
+                                            <img
+                                                class=""
+                                                src="./assets/img/2.2. банкетка ПОСЛЕ.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/2.1. банкетка ДО.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/check2-circle-copy.svg"
-                                            alt=""
-                                        />
-                                        <p>Описание:</p>
-                                        <span
-                                            >Перетяжка подлокотников
-                                            дивана</span
-                                        >
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span> 16 000 рублей </span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span>Реставрация банкетки</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Жаккард</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>12 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Декабрь, 2022</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
                                     </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/material.svg"
-                                            alt=""
-                                        />
-                                        <p>Материал:</p>
-                                        <span>Велюр</span>
+                                </div>
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
+                                            <img
+                                                class=""
+                                                src="./assets/img/6.2. Угловой диван после 2.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/6.1. Угловой диван ДО 2.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/clock.svg"
-                                            alt=""
-                                        />
-                                        <p>Срок работ:</p>
-                                        <span>5 дней</span>
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span>26 000 рублей</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span>Перетяжка углового дивана</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Велюр</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>16 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Ноябрь, 2023</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
                                     </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/calendar.svg"
-                                            alt=""
-                                        />
-                                        <p>Дата:</p>
-                                        <span>Апрель, 2021</span>
-                                    </div>
-                                    <button class="ex__item__form make__phone">
-                                        Заказать услугу
-                                    </button>
                                 </div>
                             </div>
-                            <div class="ex__item">
-                                <div class="ex__item__img">
-                                    <img
-                                        class="ex__item__after"
-                                        src="./assets/img/2.2. банкетка ПОСЛЕ.jpg"
-                                        alt=""
-                                    />
+                            <div class="ex__list__container">
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
+                                            <img
+                                                class=""
+                                                src="./assets/img/3.2. Кресло ПОСЛЕ.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/3.1. Кресло ДО.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span>14 500 рублей</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span>Перетяжка кресла</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Замша</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>9 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Июль, 2023</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
+                                            <img
+                                                class=""
+                                                src="./assets/img/4.2 двухместный диван ДО.png"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/4.1 двухместный диван ДО.png"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span>18 000 рублей </span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span>Перетяжка дивана</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Искусственная кожа</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>14 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Февраль, 2023</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ex__item">
+                                    <div class="ex__item__img">
+                                        <div class="ex__item__after">
+                                            <img
+                                                class=""
+                                                src="./assets/img/5.2. Обивка ПОСЛЕ.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> после</p>
+                                        </div>
+                                        <div class="ex__item__before">
+                                            <img
+                                                class=""
+                                                src="./assets/img/5.1. Обивка ДО.jpg"
+                                                alt=""
+                                            />
+                                            <p class="ex__item__img__desc"> до</p>
+                                        </div>
+                                        <div class="ex__item__img__mask">
+                                            <div class="ex__item__mask__container">
+                                                <img
+                                                    src="./assets/img/hand-index-thumb.svg"
+                                                    alt=""
+                                                />
+                                                <p>Наведите курсор</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ex__item__disc">
+                                        <h4>Описание</h4>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/price.svg"
+                                                alt=""
+                                            />
+                                            <p>Стоимость работ:</p>
+                                            <span>26 000 рублей</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/check2-circle-copy.svg"
+                                                alt=""
+                                            />
+                                            <p>Описание:</p>
+                                            <span>Перетяжка углового дивана</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/material.svg"
+                                                alt=""
+                                            />
+                                            <p>Материал:</p>
+                                            <span>Велюр</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/clock.svg"
+                                                alt=""
+                                            />
+                                            <p>Срок работ:</p>
+                                            <span>16 дней</span>
+                                        </div>
+                                        <div class="ex__item__disc__point">
+                                            <img
+                                                src="./assets/img/calendar.svg"
+                                                alt=""
+                                            />
+                                            <p>Дата:</p>
+                                            <span>Ноябрь, 2023</span>
+                                        </div>
+                                        <button class="ex__item__form make__phone">
+                                            Заказать услугу
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <img
-                                        class="ex__item__before"
-                                        src="./assets/img/2.1. банкетка ДО.jpg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="ex__item__disc">
-                                    <h4>Описание</h4>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/price.svg"
-                                            alt=""
-                                        />
-                                        <p>Стоимость работ:</p>
-                                        <span> 16 000 рублей </span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/check2-circle-copy.svg"
-                                            alt=""
-                                        />
-                                        <p>Описание:</p>
-                                        <span>Реставрация банкетки</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/material.svg"
-                                            alt=""
-                                        />
-                                        <p>Материал:</p>
-                                        <span>Жаккард</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/clock.svg"
-                                            alt=""
-                                        />
-                                        <p>Срок работ:</p>
-                                        <span>12 дней</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/calendar.svg"
-                                            alt=""
-                                        />
-                                        <p>Дата:</p>
-                                        <span>Декабрь, 2022</span>
-                                    </div>
-                                    <button class="ex__item__form make__phone">
-                                        Заказать услугу
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="ex__item">
-                                <div class="ex__item__img">
-                                    <img
-                                        class="ex__item__after"
-                                        src="./assets/img/6.2. Угловой диван после 2.jpg"
-                                        alt=""
-                                    />
-
-                                    <img
-                                        class="ex__item__before"
-                                        src="./assets/img/6.1. Угловой диван ДО 2.jpg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="ex__item__disc">
-                                    <h4>Описание</h4>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/price.svg"
-                                            alt=""
-                                        />
-                                        <p>Стоимость работ:</p>
-                                        <span>26 000 рублей</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/check2-circle-copy.svg"
-                                            alt=""
-                                        />
-                                        <p>Описание:</p>
-                                        <span>Перетяжка углового дивана</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/material.svg"
-                                            alt=""
-                                        />
-                                        <p>Материал:</p>
-                                        <span>Велюр</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/clock.svg"
-                                            alt=""
-                                        />
-                                        <p>Срок работ:</p>
-                                        <span>16 дней</span>
-                                    </div>
-                                    <div class="ex__item__disc__point">
-                                        <img
-                                            src="./assets/img/calendar.svg"
-                                            alt=""
-                                        />
-                                        <p>Дата:</p>
-                                        <span>Ноябрь, 2023</span>
-                                    </div>
-                                    <button class="ex__item__form make__phone">
-                                        Заказать услугу
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -2125,7 +2666,7 @@
                             </button>
                         </div>
                         <h4 class="pricelist__undertext">
-                            *конечная стоимость определяется в зависимости
+                            *Конечная стоимость определяется в зависимости
                             габаритов мебели, выбранной ткани, сложности работ,
                             места их выполнения, здесь приведена примерная
                             стоимость
@@ -2144,51 +2685,90 @@
                     <div class="container">
                         <h2 class="all-title">О нас</h2>
                         <p class="howwork__title">
-                            Вот уже 10 лет мы на рынке и нам доверились сотни
-                            клиентов. Мы используем два варианта работы:
+                            <img src="./assets/img/star_icon_227350.svg" alt="">
+                            Проводим ремонт на дому или в мастерской
+                            <img src="./assets/img/star_icon_227350.svg" alt="">
                         </p>
                         <div class="howwork__list">
                             <div class="howwork__item">
-                                <div class="howwork__item__disc">
-                                    <h5>В мастерской</h5>
-                                    <p>
-                                        Мы выезжаешь за вашей мебелью, и
-                                        качественно выпонляем даже сложнейшие
-                                        задачи
-                                    </p>
-
-                                    <button class="howwork__button make__phone">
-                                        Заказать звонок
-                                    </button>
-                                </div>
                                 <div class="howwork__item__image">
                                     <img
                                         src="./assets/img/Beg/10. О нас/в мастерской.jpg"
                                         alt=""
+                                        class="howwork__image__h"
                                     />
+                                    <h5>В мастерской</h5>
                                 </div>
-                            </div>
-                            <div class="howwork__item">
                                 <div class="howwork__item__image">
+                                    <h5>На дому</h5>
                                     <img
                                         src="./assets/img/Beg/10. О нас/на дому.jpg"
                                         alt=""
                                     />
                                 </div>
+                                
+                                
+                            </div>
+                            <div class="howwork__item">
+                                
                                 <div class="howwork__item__disc">
-                                    <h5>На дому</h5>
+                                    <h5 class="howwork__item__mob__title">В мастерской</h5>
+                                    <p>
+                                        Мы выезжаешь за вашей мебелью, и
+                                        качественно выпонляем даже сложнейшие
+                                        задачи
+                                    </p>
+                                    
+                                    
+                                </div>
+                                <div class="howwork__item__disc">
+                                    <h5 class="howwork__item__mob__title">На дому</h5>
                                     <p>
                                         Наш мастер приезжает к вам, проводит
                                         оценку работы, после чего оперативно
                                         устраняет проблему
                                     </p>
 
-                                    <button class="howwork__button make__phone">
-                                        Заказать звонок
-                                    </button>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="material__foot">
+                                <button class="make__phone howwork__buttons">Рассчитать цену</button>
+                                <button class="make__phone howwork__buttons">Заказать звонок</button>
+                            </div>
+                        </div>
+                        <div class="howwork__points">
+                            <p class="howwork__title howwork__title__bottom">
+                                <img src="./assets/img/star_icon_227350.svg" alt="">
+                                Работаем на рынке перетяжки более 10 лет
+                                <img src="./assets/img/star_icon_227350.svg" alt="">
+                            </p>
+                            <div class="howwork__point__list">
+                                <div class="howwork__point__item">
+                                    <div class="howwork__point__item__img"><img src="./assets/img/howwoek01.svg" alt=""></div>
+                                    <h5 class="howwork__point__title">Качественная работа</h5>
+                                    <p>Работаем только с проверенным материалом. Даём гарантию на перетяжку</p>
+                                </div>
+                                <div class="howwork__point__item">
+                                    <div class="howwork__point__item__img"><img src="./assets/img/howwork2.svg" alt=""></div>
+                                    <h5 class="howwork__point__title">Честные условия договора</h5>
+                                    <p>Открытые, честные цены без переплаты. Любые формы расчётов (наличные и безналичные)</p>
+                                </div>
+                                <div class="howwork__point__item">
+                                    <div class="howwork__point__item__img"><img src="./assets/img/howwork3.svg" alt=""></div>
+                                    <h5 class="howwork__point__title">Опытные мастера</h5>
+                                    <p>Наши мастера имеют большой опыт работы, являются профессионалами своего дела</p>
+                                </div>
+                                <div class="howwork__point__item">
+                                    <div class="howwork__point__item__img"><img src="./assets/img/howwork4.svg" alt=""></div>
+                                    <h5 class="howwork__point__title">Реальная экономия</h5>
+                                    <p>Мы работаем без посредниеов и готовы предложить самые низкие цены</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="howwork__button__cont"><button class="howwork__button howwork__button__foot">Заказать услугу</button></div>
                     </div>
                 </section>
                 <section class="reviews" id="reviews">
@@ -2302,7 +2882,8 @@
                     </div>
                 </section>
                 <section class="sect__calculator">
-                    <div class="container">
+                    <div class="container sect__calc__container">
+                        <h5 class="sect__calc__title">Рассчитайте стоимость прямо сейчас и получите скидку 40%</h5>
                         <div class="calc__menu__cont1">
         
                             <div class="calculator__title1">
@@ -2541,6 +3122,17 @@
                                             <input type="radio" checked />
                                             Получить скидку на обивочный материал
                                         </div>
+                                        <div class="title__func__check">
+                                            <input type="checkbox" checked />
+                                            <p>
+                                                Нажимая на кнопку "Готово", Вы соглашаетесь на
+                                                <a href="#"
+                                                    >обработку персональных данных</a
+                                                >
+                                                в соответствии с ФЗ "О персональных данных"
+                                                №152-ФЗ от 27.07.2006
+                                            </p>
+                                        </div>
                                         <button
                                             class="calculator__form__submit"
                                             type="submit"
@@ -2551,7 +3143,9 @@
                                             />
                                             Готово
                                         </button>
+                                        
                                     </form>
+                                    
                                 </div>
                             </div>
                             <div class="calculator__button__container1">
@@ -2562,7 +3156,79 @@
                         </div>
                     </div>
                 </section>
+                <section class="allserv">
+                    <div class="container allserv__container">
+                        <h2 class="all-title">Весь перечень услуг</h2>
+                        <p class="allserv__subtitle">Вы можете заказать у нас весь спектр услуг по <span>перетяжке, ремонту, рестврации, обивке</span></p>
+                        <div class="allserv__list">
+                            <div class="allserv__row">
+                                <div class="allserv__item">Перетяжка диванов</div>
+                                <div class="allserv__item">Реставрация</div>
+                                <div class="allserv__item">Ремонт диванов</div>
+                                <div class="allserv__item">Перетяжка мягкой мебели</div>
+                                <div class="allserv__item">Ремонт офисных стульев</div>
+                                <div class="allserv__item">Ремонт пружинного блоко дивана</div>
+                                <div class="allserv__item">Замена обивки</div>
+                                <div class="allserv__item">Ремонт диванов на дому</div>
+                                <div class="allserv__item">Перетяжка стульев</div>
+                                <div class="allserv__item">Обтяжка мебели</div>
+                                <div class="allserv__item">Реставрация дивана</div>
+                                <div class="allserv__item">Реставрация стульев</div>
+                                <div class="allserv__item">Перетяжка офисного кресла</div>
+                                <div class="allserv__item">Изменение дизайна и цвета</div>
+                                <div class="allserv__item">Перетяжка кресла</div>
+                                <div class="allserv__item">Ремонт стульев</div>
+                                <div class="allserv__item">Ремонт компьютерных кресел</div>
+                                <div class="allserv__item">Перетяжка на дому</div>
+                                <div class="allserv__item">Перетяжка кожей</div>
+                                <div class="allserv__item">Полный и частичный ремонт</div>
+                                <div class="allserv__item">Реставрация кожанной мебели</div>
 
+
+                            </div>
+                        </div>
+
+                        <img class="allserv__show__more" src="./assets/img/arrow-bar-down.svg" alt="">
+                        <div class="allserv__hidden">
+                            <p class="allserv__subtitle">Любых видов <span>мебели</span></p>
+                            <div class="allserv__list">
+                                <div class="allserv__row">
+                                    <div class="allserv__item">Углового дивана</div>
+                                    <div class="allserv__item">Компьютерного кресла</div>
+                                    <div class="allserv__item">Изголовья кровати</div>
+                                    <div class="allserv__item">Стульев</div>
+                                    <div class="allserv__item">Кожанного дивана</div>
+                                    <div class="allserv__item">Дивана аккордеон</div>
+                                    <div class="allserv__item">Маникюрного кресла</div>
+                                    <div class="allserv__item">Массажного кресла</div>
+                                    <div class="allserv__item">Кожанного кресла</div>
+                                    <div class="allserv__item">Подлокотников</div>
+                                    <div class="allserv__item">Межкомнатных дверей</div>
+                                    <div class="allserv__item">Кровати с мягким изголовьем</div>
+                                    <div class="allserv__item">Входной двери</div>
+                                    <div class="allserv__item">Парикмахерского кресла</div>
+                                    <div class="allserv__item">Кожаных стульев</div>
+                                    <div class="allserv__item">Механизм дивана</div>
+                                    <div class="allserv__item">Барных стульев</div>
+                                    <div class="allserv__item">Кухоных стульев</div>
+                                    <div class="allserv__item">Дивана</div>
+                                    <div class="allserv__item">Дивана клик кляк</div>
+                                    <div class="allserv__item">Кресла бюрократ</div>
+                                    <div class="allserv__item">Советское кресло</div>
+                                    <div class="allserv__item">Игровое кресло</div>
+                                    <div class="allserv__item">Педикюрное кресло</div>
+                                    <div class="allserv__item">Кушетки</div>
+                                    <div class="allserv__item">Спортинвентарь и тренажеры</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material__foot">
+                            <button class="make__phone">Рассчитать цену</button>
+                            <button class="make__phone">Заказать звонок</button>
+                        </div>
+                    </div>
+
+                </section>
                 <section class="contact" id="contact">
                     <div class="container contact__container">
                         <iframe
@@ -2572,9 +3238,9 @@
                             frameborder="0"
                         ></iframe>
                         <div class="contact__form">
-                            <h2 class="all-title">Контакты</h2>
+                            <h2 class="all-title cont--title">Контакты</h2>
                             <div class="contact__item">
-                                <h5>Адрес</h5>
+                                <h5>Адрес:</h5>
                                 <p>г. Королёв, ул. Советская, д. 31</p>
                                 <p>ОГРНИП: 321774600066522</p>
                             </div>
@@ -2583,12 +3249,12 @@
                                 <p>Пн-Вс: с 9:00 до 22:00</p>
                             </div>
                             <div class="contact__item">
-                                <h5>Электронная почта</h5>
-                                <p>obnovim-divan@yandex.ru</p>
+                                <h5>Электронная почта:</h5>
+                                <p>obivkavdom@mail.ru</p>
                             </div>
                             <div class="contact__item">
-                                <h5>Телефон</h5>
-                                <p>+7 (495) 165-17-72</p>
+                                <h5>Телефон:</h5>
+                                <p>+7 (920) 884-00-84</p>
                             </div>
                             <div class="contact__link">
                                 <button class="contact__link__what">
@@ -2658,6 +3324,11 @@
         <script src="./assets/js/header.js"></script>
         <script src="./assets/js/nav.js"></script>
         <script src="./assets/js/calc-block.js"></script>
+        <script src="./assets/js/other.js"></script>
+
+        <script src="./assets/js/type--menu.js"></script>
+        <script src="./assets/js/examples-slider.js"></script>
+        <script src="./assets/js/allserv.js"></script>
 
         <script src="./assets/js/phone.js"></script>
         <script src="./assets/js/reviews.js"></script>
