@@ -1,7 +1,16 @@
 $(document).ready(function() { 
     $('.allserv__show__more').click(function() { 
-        $('.allserv__hidden').slideToggle();
+        if($(window).width() > 499) { 
+            $('.allserv__hidden').slideToggle();
 
-        $(this).toggleClass('rotate');
+            $(this).toggleClass('rotate');
+        } else {  
+            
+            $('.allserv__list').slideToggle();
+
+            $(this).toggleClass('rotate');
+        }
+        
+       
     });
 });

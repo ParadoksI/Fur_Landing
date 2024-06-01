@@ -1,7 +1,7 @@
 const divider = document.getElementById("divider");
 
 // Устанавливаем изначальное положение линии
-divider.style.left = `calc(75% - 0.05px)`;
+divider.style.left = `calc(80% - 0.05px)`;
 
 // Добавляем обработчики событий для перемещения линии
 let isDragging = false;

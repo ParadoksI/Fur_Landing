@@ -13,6 +13,14 @@ $(document).ready(function() {
             $('.other__menu').toggleClass('active')
         }
         
+        if ($(this).hasClass('app__on__phone')) {
+            $('.other__menu h3').text('Заказать звонок');
+        } else if ($(this).hasClass('app__on__price')) {
+            $('.other__menu h3').text('Отправить заявку для расчета стоимости');
+        } else {
+            // Устанавливаем текст по умолчанию
+            $('.other__menu h3').text('Отправить заявку на звонок');
+        }
     });
 
     $('.closeOther').click(function() { 
