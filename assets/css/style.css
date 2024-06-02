@@ -20,7 +20,7 @@ button {
     text-wrap: nowrap;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1180px) {
     .header__mob__arrow { 
         display: none;
     }
@@ -866,7 +866,7 @@ button {
 
     .header__top__disc {
         display: flex;
-        gap: 100px;
+        gap: 60px;
     }
 
     .header__top__phone__title {
@@ -960,6 +960,10 @@ button {
         transition: 0.3s all ease;
     }
 
+    .header__mon__nav { 
+        display: none;
+    }
+
     .header__foot__list {
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         display: flex;
@@ -1024,22 +1028,23 @@ button {
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1179px) {
     .header__mob__arrow {
         position: absolute;
         left: 20px;
         bottom: 20px;
         width: 30px;
         transition: all 0.3s ease;
+        
         animation: bounce 2s infinite;
       }
       
       @keyframes bounce {
         0% {
-          transform: translateY(0);
+          transform: translateY(0) rotate(180deg);
         }
         40% {
-          transform: translateY(-15px);
+          transform: translateY(-15px) rotate(180deg);
         }
         
       }
@@ -1976,6 +1981,32 @@ button {
         padding: 5px 15px;
         border-radius: 5px;
         transition: 0.3s all ease;
+    }
+
+    .header__mon__nav { 
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .header__foot p  {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--sec-blue);
+    }
+
+    .header__mob__nav__link { 
+        
+        border-radius: 50%;
+        background-color: #0088cc;
+        padding: 5px;
+    }
+
+    .whatsapp__header { 
+        margin-left: auto;
+        background-color: #25d366;
     }
 
     .header__foot__list {
@@ -3009,6 +3040,32 @@ button {
         transition: 0.3s all ease;
     }
 
+    .header__mon__nav { 
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .header__foot p  {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--sec-blue);
+    }
+
+    .header__mob__nav__link { 
+        
+        border-radius: 50%;
+        background-color: #0088cc;
+        padding: 1px;
+    }
+
+    .whatsapp__header { 
+        margin-left: auto;
+        background-color: #25d366;
+    }
+
     .header__foot__list {
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         display: flex;
@@ -3018,25 +3075,26 @@ button {
         gap: 10px;
         justify-content: center;
         overflow-x: scroll;
-        padding: 5px 0px;
+        padding: 5px 0px 50px 0px;
         position: relative;
     }
 
     .header__mob__arrow {
         position: absolute;
-        left: 20px;
-        bottom: 20px;
+        left: 50%;
+        bottom: 0px;
         width: 30px;
         transition: all 0.3s ease;
         animation: bounce 2s infinite;
+        transform: translate(-50%, 0) rotate(180deg);
       }
       
       @keyframes bounce {
         0% {
-          transform: translateY(0);
+          transform: translate(-50%, 0) rotate(180deg);
         }
         40% {
-          transform: translateY(-15px);
+          transform: translate(-50%, -15px) rotate(180deg);
         }
         
       }
@@ -3095,7 +3153,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1180px) {
     .main__wrapper {
         display: flex;
         flex-direction: column;
@@ -3149,14 +3207,19 @@ button {
 
     .divider-circle {
         position: absolute;
-        border: 4px solid #000;
-        background-color: #fff;
+        
+        background-color: #ffffff;
         top: 50%;
         left: 75%;
         transform: translate(-50%, -50%);
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        padding: 5px;
+        user-select: none;
+    }
+
+    .divider-circle img { 
         user-select: none;
     }
 
@@ -3335,12 +3398,12 @@ button {
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1179px) {
     .main__wrapper {
         display: flex;
         flex-direction: column;
         gap: 60px;
-        margin-top: 69px;
+        margin-top: 109px;
     }
 
     .title {
@@ -3586,7 +3649,7 @@ button {
         display: flex;
         flex-direction: column;
         gap: 60px;
-        margin-top: 69px;
+        margin-top: 109px;
     }
 
     .title {
@@ -4652,6 +4715,7 @@ button {
 
     .now__card {
         width: 100%;
+        min-width: 332px;
         border: 1px solid var(--main-red);
         padding: 15px 30px 30px 30px;
         text-align: center;
@@ -4674,6 +4738,12 @@ button {
         gap: 10px;
         border-radius: 15px;
         color: #fff;
+        width: 100%;
+    }
+
+    .now__button__whatsapp img,
+    .now__button__telegramm img { 
+        margin-left: auto;
     }
 
     .now__button__whatsapp {
@@ -5183,7 +5253,7 @@ button {
     .add__container {
         background-image: url("../img/фон\ для\ блока\ с\ ценами.jpg");
         background-size: cover;
-        padding: 40px 90px;
+        padding: 52px 90px;
     }
 
     .add-title {
@@ -6475,7 +6545,7 @@ button {
     }
 
     .howwork__points { 
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .howwork__point__list { 

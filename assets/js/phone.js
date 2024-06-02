@@ -14,6 +14,11 @@ $(document).ready(function() {
         window.location.href = "tel:" + phoneNumber;
     });
 
+    document.getElementById("phoneHeader").addEventListener("click", function() {
+        var phoneNumber = "89240220551"; // Здесь указывается нужный номер телефона
+        window.location.href = "tel:" + phoneNumber;
+    });
+
     $('.make__phone').click(function() {
         if ($('.calculator__menu').hasClass('active')) {
             // Если у элемента calculator__menu есть класс active, удаляем его и добавляем/удаляем классы у других элементов
